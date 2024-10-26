@@ -128,12 +128,12 @@
         class="navbar-list pt-4 text-lg text-para lg:flex lg:justify-between md:pt-0 text-center justify-center gap-3 sofia-r bg-glass absolute left-0 right-0 z-10"
       >
         <li class="navbar-item mt-5">
-          <a class="navbar-link block active-link" href="">About</a>
+          <a class="navbar-link block active-link" href="./about.html">About</a>
         </li>
         <li class="navbar-item">
           <a
             class="navbar-link md:p-4 py-2 block hover:text-purple-400"
-            href="./coming-soon.html"
+            href="./app.html"
             >App</a
           >
         </li>
@@ -248,10 +248,10 @@
             class="pt-4 text-sm 2xl:text-lg text-para md:flex md:items-center md:justify-between md:pt-0 text-center justify-center gap-20 lg:gap-5 xl:gap-12 2xl:gap-13 sofia-r"
           >
             <li>
-              <a class="block active-link" href="#">About</a>
+              <a class="block active-link" href="./about.html">About</a>
             </li>
             <li>
-              <a class="block" href="./coming-soon.html">App</a>
+              <a class="block" href="./app.html">App</a>
             </li>
             <li>
               <a class="block" href="./coming-soon.html">Smart Home </a>
@@ -312,52 +312,54 @@
           creativity, and integrity, where every idea is valued,</span
         >
         and every challenge is met with determination. Together, we're not just
-        building technology—we're shaping the future of <br />
+        building technology—we're shaping the future of <br class="hidden" />
         energy.
       </p>
     </section>
     <!------ Team Hero Section Code End  ------>
     <!------ Team Section Code Start  ------>
-    <section class="px-[5%] my-20">
+    <section class="px-[5%] my-10 md:my-20">
       <div class="">
-        <div class="flex space-x-4 items-center bg-[#E7E8E9] p-2 rounded-2xl">
+        <div class="flex flex-wrap md:flex-nowrap gap-4 items-center bg-[#E7E8E9] p-2 rounded-2xl">
           <button
-            class="tab active bg-primary text-white px-4 py-5 rounded-xl w-full text-[24px] sofia-m"
+            class="tab active bg-primary text-white px-4 py-5 rounded-xl w-full text-[16px] md:text-[18px] lg:text-[24px] sofia-m"
             onclick="showTab(1)"
           >
             Founders
           </button>
           <button
-            class="tab bg-white text-para px-4 py-5 rounded-xl w-full text-[24px] sofia-r"
+            class="tab bg-white text-para px-4 py-5 rounded-xl w-full text-[16px] md:text-[18px] lg:text-[24px] sofia-r"
             onclick="showTab(2)"
           >
             Founding Team
           </button>
           <button
-            class="tab bg-white text-para px-4 py-5 rounded-xl w-full text-[24px] sofia-r"
+            class="tab bg-white text-para px-4 py-5 rounded-xl w-full text-[16px] md:text-[18px] lg:text-[24px] sofia-r"
             onclick="showTab(3)"
           >
             Investors
           </button>
           <button
-            class="tab bg-white text-para px-4 py-5 rounded-xl w-full text-[24px] sofia-r"
+            class="tab bg-white text-para px-4 py-5 rounded-xl w-full text-[16px] md:text-[18px] lg:text-[24px] sofia-r"
             onclick="showTab(4)"
           >
             Non-Executives
           </button>
         </div>
 
-        <div class="mt-32 px-10">
+        <div class="mt-32 px-2 2xl:px-10">
           <div class="tab-content" id="tab-1">
             <div>
-              <h3 class="text-secondary text-[32px] trenda-semi ml-7">
+              <h3 class="text-secondary text-[26px] md:text-[32px] trenda-semi ml-3 md:ml-7">
                 Alexander Owers
               </h3>
-              <p class="text-para text-xl sofia-l ml-7">Founder</p>
-              <div class="flex items-start gap-24 mt-8">
-                <img src="./assets/img/alex.png" alt="" />
-                <div>
-                  <p class="text-[26px] sofia-l text-para leading-[56px]">
+              <p class="text-para text-base md:text-xl sofia-l ml-3 md:ml-7">Founder</p>
+              <div class="flex flex-col lg:flex-row items-start gap-10 md:gap-24 lg:gap-10 xl:gap-24 mt-3 md:mt-8">
+                <div class="lg:basis-1/2">
+                  <img src="./assets/img/alex.png" class="max-w-full" alt="" />
+                </div> 
+                <div class="lg:basis-1/2">
+                  <p class="text-[18px] md:text-[26px] lg:text-[22px] xl:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] lg:leading-[40px] xl:leading-[56px]">
                     Alexander is a driven and charismatic individual with a
                     strong passion for leadership, communication, and personal
                     growth. Currently enrolled in a MBA program, Alexander is
@@ -365,13 +367,13 @@
                     stay ahead of the curve in the ever-evolving business
                     landscape.
                   </p>
-                  <p class="text-[26px] sofia-l text-para leading-[56px] my-10">
+                  <p class="text-[18px] md:text-[26px] lg:text-[22px] xl:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] lg:leading-[40px] xl:leading-[56px] my-5 2xl:my-10">
                     With a strong foundation in his educational background,
                     Alexander holds a single GCSE in mathematics and a BTEC in
                     Automotive Engineering, demonstrating his ability to
                     overcome obstacles and achieve his goals.
                   </p>
-                  <p class="text-[26px] sofia-l text-para leading-[56px]">
+                  <p class="text-[18px] md:text-[26px] lg:text-[22px] xl:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] lg:leading-[40px] xl:leading-[56px] block lg:hidden xl:block">
                     When he's not focusing on his studies, Alexander enjoys
                     staying active through his favourite hobbies, including
                     running, cycling, and hitting the gym. He's also a foodie at
@@ -382,19 +384,28 @@
                   </p>
                 </div>
               </div>
-              <p class="text-[26px] sofia-l text-para leading-[56px] my-10">
+              <p class="text-[18px] md:text-[26px] lg:text-[22px] xl:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] lg:leading-[40px] xl:leading-[56px] hidden lg:block xl:hidden mt-10">
+                When he's not focusing on his studies, Alexander enjoys
+                staying active through his favourite hobbies, including
+                running, cycling, and hitting the gym. He's also a foodie at
+                heart and loves cooking up a storm in the kitchen. On
+                weekends, you can find him cheering on his favourite
+                football team or indulging in his love for comic books and
+                superheroes.
+              </p>
+              <p class="text-[18px] md:text-[26px] lg:text-[22px] xl:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] lg:leading-[40px] xl:leading-[56px] my-10">
                 Alexander is deeply committed to engaging with his local
                 community and making a positive impact. Alexander is always
                 looking for new opportunities to get involved and make a
                 difference
               </p>
-              <p class="text-[26px] sofia-l text-para leading-[56px]">
+              <p class="text-[18px] md:text-[26px] lg:text-[22px] xl:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] lg:leading-[40px] xl:leading-[56px]">
                 Despite facing challenges with dyslexia and bipolar, Alexander
                 has developed a strong work ethic and a positive attitude. His
                 excellent communication skills, confident demeanor , and ability
                 to overcome obstacles have made him an asset to any team.
               </p>
-              <p class="text-[26px] sofia-l text-para leading-[56px] my-10">
+              <p class="text-[18px] md:text-[26px] lg:text-[22px] xl:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] lg:leading-[40px] xl:leading-[56px] my-10">
                 With a professional background that includes serving as
                 Commercial Director at Alfa Power and founding a charity
                 fundraising platform and a sustainability company, Alexander has
@@ -404,7 +415,7 @@
                 Portuguese, recognizing the importance of language skills in
                 international business.
               </p>
-              <p class="text-[26px] sofia-l text-para leading-[56px]">
+              <p class="text-[18px] md:text-[26px] lg:text-[22px] xl:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] lg:leading-[40px] xl:leading-[56px]">
                 Alexander is a dynamic and versatile individual who is always
                 looking for new challenges and opportunities to grow. He is
                 passionate about leading by example and inspiring others to do
@@ -414,16 +425,16 @@
               </p>
             </div>
             <div class="py-32">
-              <div class="w-[43%] ml-auto">
-                <h3 class="text-secondary text-[32px] trenda-semi">
+              <div class="lg:w-[43%] ml-auto">
+                <h3 class="text-secondary text-[26px] md:text-[32px] trenda-semi">
                   Dwayne Spiteri
                 </h3>
-                <p class="text-para text-xl sofia-l">Co-founder</p>
+                <p class="text-para text-base md:text-xl sofia-l">Co-founder</p>
               </div>
 
-              <div class="flex items-start gap-24 mt-8">
-                <div>
-                  <p class="text-[26px] sofia-l text-para leading-[56px]">
+              <div class="flex flex-col-reverse lg:flex-row items-start gap-10 md:gap-24 lg:gap-10 x;l:gap-24 my-3 md:mt-8">
+                <div class="basis-1/2">
+                  <p class="text-[18px] md:text-[26px] lg:text-[22px] xl:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] lg:leading-[40px] xl:leading-[56px] ">
                     Dwayne Spiteri started off his career as a particle
                     physicist 12 years ago, studying Msci Physics with Particle
                     Physics and Cosmology from the University of Birmingham, and
@@ -434,7 +445,7 @@
                     at Glasgow and pivoted to working in the field of computing
                     sustainability.
                   </p>
-                  <p class="text-[26px] sofia-l text-para leading-[56px] my-10">
+                  <p class="text-[18px] md:text-[26px] lg:text-[22px] xl:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] lg:leading-[40px] xl:leading-[56px] my-5 xl:my-10">
                     Throughout his academic career, he has applied his data
                     analysis skills order to tackle a wide variety of complex
                     problems and projects. Notably, he has investigated Higgs
@@ -444,14 +455,16 @@
                     and developed simulations to investigate operational carbon
                     reduction measures.
                   </p>
-                  <p class="text-[26px] sofia-l text-para leading-[56px]">
+                  <p class="text-[18px] md:text-[26px] lg:text-[22px] xl:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] lg:leading-[40px] xl:leading-[56px]">
                     Dwayne is also interested in making sure knowledge is
                     accessible
                   </p>
                 </div>
-                <img src="./assets/img/dwayne.png" alt="" />
+                <div class="basis-1/2">
+                  <img src="./assets/img/dwayne.png" class="max-w-full" alt="" />
+                </div>  
               </div>
-              <p class="text-[26px] sofia-l text-para leading-[56px] my-10">
+              <p class="text-[18px] md:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] md:my-10">
                 to all walks of life. He often organises and participates in
                 outreach events, sharing his knowledge, passion and expertise
                 with others. In addition, for the past four years, has played a
@@ -463,14 +476,14 @@
               </p>
             </div>
             <div>
-              <h3 class="text-secondary text-[32px] trenda-semi ml-7">
+              <h3 class="text-secondary text-[26px] md:text-[32px] trenda-semi ml-3 md:ml-7">
                 Fabrizio Romanzini
               </h3>
-              <p class="text-para text-xl sofia-l ml-7">Co-Founder</p>
-              <div class="flex items-start gap-24 mt-8">
+              <p class="text-para text-xl sofia-l ml-3 md:ml-7">Co-Founder</p>
+              <div class="flex flex-col lg:flex-row items-start gap-10 md:gap-24 mt-3 md:mt-8">
                 <img src="./assets/img/fabrizio.png" alt="" />
                 <div>
-                  <p class="text-[26px] sofia-l text-para leading-[56px]">
+                  <p class="text-[18px] md:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] ">
                     Passionate & dedicate business leader with 15 years of
                     experience, I've had the privilege of leading multinational
                     companies and driving profitable results through strategic
@@ -480,7 +493,7 @@
                     reality and build a team that shares my passion for
                     innovation and growth
                   </p>
-                  <p class="text-[26px] sofia-l text-para leading-[56px] my-10">
+                  <p class="text-[18px] md:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] my-10">
                     My background in engineering and my Master's degree in
                     Strategy Business Management have given me a unique
                     perspective on what it takes to succeed in today's
@@ -489,20 +502,20 @@
                     but also about being able to inspire and motivate people to
                     work towards a common goal.
                   </p>
-                  <p class="text-[26px] sofia-l text-para leading-[56px]">
+                  <p class="text-[18px] md:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] ">
                     As a lifelong learner, I'm always seeking out new knowledge
                     and insights to stay ahead of the curve. I'm fascinated by
                     the latest
                   </p>
                 </div>
               </div>
-              <p class="text-[26px] sofia-l text-para leading-[56px] my-10">
+              <p class="text-[18px] md:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] my-10">
                 technologies, innovations, and trends in renewable energy,
                 people management, and business innovation, and I'm passionate
                 about using this knowledge to disrupt conventional business
                 models and find new ways to drive growth and success.
               </p>
-              <p class="text-[26px] sofia-l text-para leading-[56px]">
+              <p class="text-[18px] md:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] ">
                 As Director at Britcham Brazil, I'm excited to bring my
                 expertise and leadership skills to the table and help drive
                 business growth and development in the region. I'm committed to
@@ -512,16 +525,16 @@
               </p>
             </div>
             <div class="py-32">
-              <div class="w-[43%] ml-auto">
-                <h3 class="text-secondary text-[32px] trenda-semi">
+              <div class="lg:w-[43%] ml-auto">
+                <h3 class="text-secondary text-[26px] md:text-[32px] trenda-semi">
                   LaLa Rukh
                 </h3>
-                <p class="text-para text-xl sofia-l">Co-founder</p>
+                <p class="text-para text-base md:text-xl sofia-l">Co-founder</p>
               </div>
 
-              <div class="flex items-start gap-24 mt-8">
+              <div class="flex flex-col-reverse lg:flex-row items-start gap-10 md:gap-24 mt-3 md:mt-8">
                 <div>
-                  <p class="text-[26px] sofia-l text-para leading-[56px]">
+                  <p class="text-[18px] md:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] ">
                     With a passion for creativity and precision, Lala Rukh is a
                     dedicated professional graphic designer and an MPhil student
                     in mathematics. Balancing the intricacies of visual design
@@ -531,7 +544,7 @@
                     marked by a commitment to excellence and an unwavering
                     enthusiasm for learning.
                   </p>
-                  <p class="text-[26px] sofia-l text-para leading-[56px] my-10">
+                  <p class="text-[18px] md:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] my-10">
                     Lala’s expertise in graphic design is complemented by her
                     strong academic background, which has honed her
                     problem-solving skills and attention to detail. This
@@ -540,7 +553,7 @@
                     work not only looks stunning but also effectively
                     communicates the intended message.
                   </p>
-                  <p class="text-[26px] sofia-l text-para leading-[56px]">
+                  <p class="text-[18px] md:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] ">
                     As a graphic designer, Lala has a keen eye for aesthetics
                     and a deep understanding of how to translate concepts into
                     visually
@@ -548,13 +561,13 @@
                 </div>
                 <img src="./assets/img/lala.png" alt="" />
               </div>
-              <p class="text-[26px] sofia-l text-para leading-[56px] my-10">
+              <p class="text-[18px] md:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] md:my-10">
                 compelling designs. Whether working on branding, digital media,
                 or print materials, she is dedicated to creating designs that
                 resonate with audiences and meet the specific needs of her
                 clients
               </p>
-              <p class="text-[26px] sofia-l text-para leading-[56px] my-10">
+              <p class="text-[18px] md:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] my-10">
                 Lala is a dynamic and versatile individual, always eager to take
                 on new challenges and push the boundaries of her creativity. Her
                 dedication to her craft and her ability to blend artistic vision
@@ -565,14 +578,14 @@
           </div>
           <div class="tab-content hidden" id="tab-2">
             <div>
-              <h3 class="text-secondary text-[32px] trenda-semi ml-7">
+              <h3 class="text-secondary text-[26px] md:text-[32px] trenda-semi ml-3 md:ml-7">
                 Abdul Rehman
               </h3>
-              <p class="text-para text-xl sofia-l ml-7">Co-founder</p>
-              <div class="flex items-start gap-24 mt-8">
+              <p class="text-para text-base md:text-xl sofia-l ml-3 md:ml-7">Co-founder</p>
+              <div class="flex flex-col lg:flex-row items-start gap-10 md:gap-24 mt-3 md:mt-8">
                 <img src="./assets/img/abdul.png" alt="" />
                 <div>
-                  <p class="text-[26px] sofia-l text-para leading-[56px]">
+                  <p class="text-[18px] md:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] ">
                     Abdul Rehman is a seasoned system developer with a solid
                     foundation in computer science, holding a degree in the
                     field and boasting 8 years of experience in system
@@ -583,7 +596,7 @@
                     adaptability needed to tackle complex challenges in system
                     development.
                   </p>
-                  <p class="text-[26px] sofia-l text-para leading-[56px] mt-10">
+                  <p class="text-[18px] md:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px]  mt-10">
                     For the past 3 years, Abdul has been working independently
                     under the name RISS, offering specialized services to a
                     diverse clientele. His independent work has allowed him to
@@ -596,7 +609,7 @@
                   </p>
                 </div>
               </div>
-              <p class="text-[26px] sofia-l text-para leading-[56px] my-10">
+              <p class="text-[18px] md:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px]  my-10">
                 Abdul Rehman is not only a highly skilled developer but also a
                 dedicated professional who values strong client relationships.
                 His ability to understand and address the specific requirements
@@ -605,16 +618,16 @@
               </p>
             </div>
             <div class="py-32">
-              <div class="w-[43%] ml-auto">
-                <h3 class="text-secondary text-[32px] trenda-semi">
+              <div class="lg:w-[43%] ml-auto">
+                <h3 class="text-secondary text-[26px] md:text-[32px] trenda-semi">
                   Kashan Bhatti
                 </h3>
-                <p class="text-para text-xl sofia-l">Co-founder</p>
+                <p class="text-para text-base md:text-xl sofia-l">Co-founder</p>
               </div>
 
-              <div class="flex items-start gap-24 mt-8">
+              <div class="flex flex-col-reverse lg:flex-row items-start gap-10 md:gap-24 mt-3 md:mt-8">
                 <div>
-                  <p class="text-[26px] sofia-l text-para leading-[56px]">
+                  <p class="text-[18px] md:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] ">
                     Kashan Bhatti is a self-made professional with a deep
                     passion for graphic design, video editing, and visual
                     storytelling. As the co-founder of RISS, Kashan has carved
@@ -624,7 +637,7 @@
                     Illustrator, and a wide range of video editing tools, making
                     him a versatile and dynamic creator.
                   </p>
-                  <p class="text-[26px] sofia-l text-para leading-[56px] my-10">
+                  <p class="text-[18px] md:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] my-10">
                     Kashan’s journey is a testament to his self-made success.
                     With no formal backing, he has built a thriving career from
                     the ground up, mastering his craft through years of hands-on
@@ -633,7 +646,7 @@
                     showcasing a diverse array of projects that highlight his
                     creative vision and technical prowess.
                   </p>
-                  <p class="text-[26px] sofia-l text-para leading-[56px]">
+                  <p class="text-[18px] md:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] ">
                     Throughout his career, Kashan has worked on numerous
                     projects that demonstrate his ability to deliver
                     high-quality work in graphic
@@ -641,31 +654,31 @@
                 </div>
                 <img src="./assets/img/kashan.png" alt="" />
               </div>
-              <p class="text-[26px] sofia-l text-para leading-[56px] my-10">
+              <p class="text-[18px] md:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] md:my-10">
                 design and video production. His creative solutions are not only
                 aesthetically pleasing but also strategically aligned with the
                 goals of his clients, making him a valuable asset in any
                 collaborative effort
               </p>
-              <p class="text-[26px] sofia-l text-para leading-[56px] my-10">
+              <p class="text-[18px] md:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] my-10">
                 Kashan Bhatti’s story is one of perseverance, skill, and
                 creativity. As a co-founder of RISS, he continues to push the
                 boundaries of what’s possible in the creative field, always
                 striving to deliver work that inspires and engages.
               </p>
-              <div class="flex items-center justify-between my-48">
+              <div class="flex flex-col items-center justify-between my-48 gap-20 lg:gap-0">
                 <div>
-                  <h3 class="text-secondary text-[32px] trenda-semi ml-7">
+                  <h3 class="text-secondary text-[26px] md:text-[32px] trenda-semi ml-3 md:ml-7">
                     Marcellus Schivinski
                   </h3>
-                  <p class="text-para text-xl sofia-l ml-7">Operations</p>
+                  <p class="text-para text-base md:text-xl sofia-l ml-3 md:ml-7">Operations</p>
                   <img src="./assets/img/marcelllus.png" class="mt-5" alt="" />
                 </div>
                 <div>
-                  <h3 class="text-secondary text-[32px] trenda-semi ml-7">
+                  <h3 class="text-secondary text-[26px] md:text-[32px] trenda-semi ml-3 md:ml-7">
                     Samantha Fretwell
                   </h3>
-                  <p class="text-para text-xl sofia-l ml-7">Finance</p>
+                  <p class="text-para text-base md:text-xl sofia-l ml-3 md:ml-7">Finance</p>
                   <img src="./assets/img/samantha.png" class="mt-5" alt="" />
                 </div>
               </div>
@@ -673,17 +686,17 @@
           </div>
           <div class="tab-content hidden" id="tab-3">
             <div>
-              <h3 class="text-secondary text-[32px] trenda-semi ml-7">
+              <h3 class="text-secondary md:text-[32px] trenda-semi ml-3 md:ml-7">
                 Stephen Smith
                 <span class="trenda-r">( L.L.B.(Hons) DipPFS )</span>
               </h3>
-              <p class="text-para text-xl sofia-l ml-7">
+              <p class="text-para text-base md:text-xl sofia-l ml-3 md:ml-7">
                 Managing Director & Financial Adviser
               </p>
-              <div class="flex items-start gap-24 mt-8">
+              <div class="flex flex-col lg:flex-row items-start gap-10 md:gap-24 mt-3 md:mt-8">
                 <img src="./assets/img/stephen.png" alt="" />
                 <div>
-                  <p class="text-[26px] sofia-l text-para leading-[56px]">
+                  <p class="text-[18px] md:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] ">
                     With over three decades of experience, Stephen Smith has
                     established himself as a trusted financial adviser. As the
                     Managing Director of Smith Eliot Financial Management Ltd, a
@@ -691,7 +704,7 @@
                     Management, he's dedicated to helping individuals and
                     families navigate complex financial landscapes.
                   </p>
-                  <p class="text-[26px] sofia-l text-para leading-[56px] my-10">
+                  <p class="text-[18px] md:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] my-10">
                     Stephen's legal background, coupled with his extensive
                     financial knowledge, provides a unique perspective on wealth
                     management. His expertise encompasses investment planning,
@@ -699,7 +712,7 @@
                     enabling him to deliver tailored solutions that align with
                     his clients' specific goals.
                   </p>
-                  <p class="text-[26px] sofia-l text-para leading-[56px]">
+                  <p class="text-[18px] md:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] ">
                     Outside of work, Stephen is a passionate sports enthusiast,
                     with a particular fondness for classic cars, cricket, rugby,
                     and the thrill of Le Mans. He also enjoys exploring the
@@ -712,18 +725,18 @@
           </div>
           <div class="tab-content hidden" id="tab-4">
             <div class="py-32">
-              <div class="w-[43%] ml-auto">
-                <h3 class="text-secondary text-[32px] trenda-semi">
+              <div class="lg:w-[43%] ml-auto">
+                <h3 class="text-secondary text-[26px] md:text-[32px] trenda-semi">
                   Raj Kapoor
                 </h3>
-                <p class="text-para text-xl sofia-l capitalize">
+                <p class="text-para text-base md:text-xl sofia-l capitalize">
                   non-executive director
                 </p>
               </div>
 
-              <div class="flex items-start gap-24 mt-8">
+              <div class="flex flex-col-reverse lg:flex-row items-start gap-10 md:gap-24 mt-3 md:mt-8">
                 <div>
-                  <p class="text-[26px] sofia-l text-para leading-[56px]">
+                  <p class="text-[18px] md:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] ">
                     Raj is the Founder of India Blockchain Alliance, the largest
                     Indian emerging technology tech think tank, the Chairman of
                     the Global Alliance for Artificial Intelligence and
@@ -741,44 +754,50 @@
                     Foundation, USA as Advosry Board member - to set up the
                     Internet of Careers.
                   </p>
-                  <p class="text-[26px] sofia-l text-para leading-[56px] mt-10">
+                  <p class="text-[18px] md:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] mt-10">
                     Raj is also a visionary in the realm of artificial
                     intelligence, blending deep expertise with innovative
                     thinking to pioneer groundbreaking solutions at the
-                    forefront of technology. Beyond his technical
+                    forefront of technology. Beyond his technical <span class="lg:hidden">
+                      mastery, Raj possess the ability to communicate complex concepts
+                in simple terms, bridging the gap between technology and
+                laypersons, actively engages in industry collaborations, shaping
+                the future of AI-driven innovations. Raj is a champion of Ethics
+                and Responsible AI.
+                    </span>
                   </p>
                 </div>
                 <img src="./assets/img/raj.png" alt="" />
               </div>
-              <p class="text-[26px] sofia-l text-para leading-[56px] mt-10">
+              <p class="text-[18px] md:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] mt-10 hidden lg:block">
                 mastery, Raj possess the ability to communicate complex concepts
                 in simple terms, bridging the gap between technology and
                 laypersons, actively engages in industry collaborations, shaping
                 the future of AI-driven innovations. Raj is a champion of Ethics
                 and Responsible AI.
               </p>
-              <p class="text-[26px] sofia-l text-para leading-[56px] my-10">
+              <p class="text-[18px] md:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] my-10">
                 Raj regularly speaks at Tech events in India, UK, USA, Africa,
                 Malaysia and Canada and is also a four times TedX speaker.
                 Besides blockchain, Raj is skilled in AI, Robotics, Cyber
                 Security. IoT, and Cloud Computing. He has spoken in over 140
                 international and national events in the last 12 months.
               </p>
-              <p class="text-[26px] sofia-l text-para leading-[56px]">
+              <p class="text-[18px] md:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] ">
                 Raj is also a regular contributor to several publications
                 including Economic Times, Fortune, Moneycontrol, Mint, NDTV
                 Profit, Daily Tribune, Business Standard, Decrypt and more. Raj
                 also appears regularly on multiple television channels where he
                 speaks on different aspects of the blockchain industry.
               </p>
-              <p class="text-[26px] sofia-l text-para leading-[56px] my-10">
+              <p class="text-[18px] md:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] my-10">
                 Raj was also selected this year as a top cryptocurrency and
                 blockchain influencer in March by Asian Market Cap and featured
                 on Corporate Connect Magazine (Cover Story) This was capped off
                 by the Thought Leadership Award by Industry Insight Award in Las
                 Vegas in December.
               </p>
-              <p class="text-[26px] sofia-l text-para leading-[56px]">
+              <p class="text-[18px] md:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] ">
                 Raj has designed and worked on 4 Blockchains, 5 Centralised
                 Exchanges, 3 Swaps and 3 DEX's. He is now working with his team
                 on India's own indigenous Layer 0 blockchain. Raj is also
@@ -786,24 +805,24 @@
                 blockchain projects which are aligned with the UN Sustainable
                 Development Goals.
               </p>
-              <p class="text-[26px] sofia-l text-para leading-[56px] my-10">
+              <p class="text-[18px] md:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] my-10">
                 Raj has authored 20+ courses in blockchain, fintech, DeFi,
                 NFT’s, Metaverse and more. These are implemented by NASSCOM,
                 NSDC, CII, UnAcademy and multiple other edtech platforms in
                 India and overseas.
               </p>
-              <p class="text-[26px] sofia-l text-para leading-[56px]">
+              <p class="text-[18px] md:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] ">
                 Raj is also heading the steering committee for the E - Notary
                 project for the Government of Gujarat and has also represented
                 India at the G20 committee on crypto compliance and frameworks.
                 Recently Raj has been onboarded as a Mentor with Techstars - the
                 largest pre-seed investor in the world.
               </p>
-              <p class="text-[26px] sofia-l text-para leading-[56px] my-10">
+              <p class="text-[18px] md:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] my-10">
                 Raj is also the Consulting Editor for 3.0 TV and Digilah,
                 Singapore.
               </p>
-              <p class="text-[26px] sofia-l text-para leading-[56px]">
+              <p class="text-[18px] md:text-[26px] sofia-l text-para leading-[30px] md:leading-[56px] ">
                 This year Raj won the award for the CSR Impact Leader of the
                 year for his innovative technology soutions for the CSR sector
               </p>

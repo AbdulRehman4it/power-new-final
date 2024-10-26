@@ -120,22 +120,22 @@
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <rect width="20" height="0.7" rx="0.35" fill="#313131" />
-            <rect y="5.5" width="20" height="0.7" rx="0.35" fill="#313131" />
-            <rect y="11" width="20" height="0.7" rx="0.35" fill="#313131" />
+            <rect width="20" height="0.7" rx="0.35" fill="#717171" />
+            <rect y="5.5" width="20" height="0.7" rx="0.35" fill="#717171" />
+            <rect y="11" width="20" height="0.7" rx="0.35" fill="#717171" />
           </svg>
         </button>
       </header>
       <ul
-        class="navbar-list pt-4 text-lg text-para lg:flex lg:justify-between md:pt-0 text-center justify-center gap-3 sofia-r bg-glass absolute left-0 right-0 z-10"
+        class="navbar-list pt-4 text-lg text-para lg:flex lg:justify-between md:pt-0 text-center justify-center gap-3 sofia-r bg-glass bg-[#00000079] absolute left-0 right-0 z-10"
       >
         <li class="navbar-item mt-5">
-          <a class="navbar-link block active-link" href="">About</a>
+          <a class="navbar-link block active-link" href="./about.html">About</a>
         </li>
         <li class="navbar-item">
           <a
             class="navbar-link md:p-4 py-2 block hover:text-purple-400"
-            href="./coming-soon.html"
+            href="./app.html"
             >App</a
           >
         </li>
@@ -196,7 +196,7 @@
 
     <!-- mobile Nav End -->
 
-    <div class="px-[6%] md:pt-8 w-full clover-bg">
+    <div class="px-[6%] lg:pt-8 w-full clover-bg">
       <nav
         class="hidden sticky top-0 lg:flex items-center justify-between w-full py-4 md:py-0 lg:py-4 text-lg text-black lg:relative nav-bg"
       >
@@ -250,10 +250,10 @@
             class="pt-4 text-sm 2xl:text-lg text-para md:flex md:items-center md:justify-between md:pt-0 text-center justify-center gap-20 lg:gap-5 xl:gap-12 2xl:gap-13 sofia-r"
           >
             <li>
-              <a class="block active-link" href="#">About</a>
+              <a class="block active-link" href="./about.html">About</a>
             </li>
             <li>
-              <a class="block" href="./coming-soon.html">App</a>
+              <a class="block" href="./app.html">App</a>
             </li>
             <li>
               <a class="block" href="./coming-soon.html">Smart Home </a>
@@ -296,32 +296,42 @@
     <!-- Section Code Start  -->
     <section class="px-[5%]">
       <div>
-        <img
+        <!-- <img
           src="./assets/img/clover-logo.png"
           class="mx-auto max-w-full my-36"
           alt=""
-        />
+        /> -->
+        <video
+          class="w-full lg:w-3/4  max-w-full lg:mx-auto"
+          playsinline
+          autoplay
+          muted
+        >
+          <source src="./assets/img/clover-anm.mp4" type="video/mp4" />
+          <!-- <source src="movie.ogg" type="video/ogg"> -->
+          Your browser does not support the video tag.
+        </video>
         <h3
-          class="text-white sofia-l text-[38px] leading-[74px] uppercase text-center"
+          class="text-white sofia-l text-[20px] md:text-[30px] 2xl:text-[38px] leading-[35px] md:leading-[74px] uppercase text-center"
         >
           Incentivising Carbon Reduction can encourage users to take actions
           that reduce their carbon footprint.
         </h3>
-        <img
+        <!-- <img
           src="./assets/img/clover1.png"
           class="mx-auto max-w-full mt-36 mb-48"
           alt=""
         />
-        <img src="./assets/img/clover2.png" class="mx-auto max-w-full" alt="" />
+        <img src="./assets/img/clover2.png" class="mx-auto max-w-full" alt="" /> -->
       </div>
     </section>
     <div>
-      <img src="./assets/img/coin.png" class="w-full max-w-full my-48" alt="" />
+      <img src="./assets/img/coin.png" class="w-full max-w-full my-20 md:my-48" alt="" />
     </div>
     <section class="px-[5%]">
       <div>
         <p
-          class="sofia-l text-primary text-[62px] leading-[110px] text-center uppercase"
+          class="sofia-l text-primary text-[25px] md:text-[50px] lg:text-[45px] 2xl:text-[62px] leading-[35px] md:leading-[80px] lg:leading-[70px] 2xl:leading-[110px] text-center uppercase"
         >
           Clover is a unique feature within the Power ecosystem that rewards
           users for their sustainable energy habits. By achieving milestones and
@@ -332,71 +342,80 @@
     </section>
     <!-- Section Code End  -->
     <!-- Fire Air Section Code Start  -->
-    <section class="px-[5%] py-48">
-      <div class="flex items-center justify-between">
+    <section class="px-[5%] py-20 md:py-48">
+      <div class="flex flex-col md:flex-row items-center md:items-start lg:items-center justify-between gap-20 md:gap-10 lg:gap-0">
         <div>
-          <img src="./assets/img/fire.png" alt="" />
-          <h3 class="text-white trenda-semi text-[45px] mt-8 mb-2">Fire</h3>
-          <p class="sofia-l text-light text-[30px] leading-[54px]">
-            Overall consumption reduction - <br />
-            Earn achievements by reducing your <br />
-            overall energy consumption and <br />
-            making your home more energy-<br />efficient.
+          <div>
+            <img src="./assets/img/fire.png" class="max-w-full" alt="" />
+          </div>
+          
+          <h3 class="text-white trenda-semi text-[30px] md:text-[32px] 2xl:text-[45px] mt-8 mb-2">Fire</h3>
+          <p class="sofia-l text-light text-[20px] md:text-[25px] 2xl:text-[30px] leading-[35px] md:leading-[40px] 2xl:leading-[54px]">
+            Overall consumption reduction - <br class="hidden lg:block" />
+            Earn achievements by reducing your <br class="hidden lg:block" />
+            overall energy consumption and <br class="hidden lg:block" />
+            making your home more energy-<br class="hidden lg:block" />efficient.
           </p>
         </div>
         <div>
-          <img src="./assets/img/air.png" alt="" />
-          <h3 class="text-white trenda-semi text-[45px] mt-8 mb-2">Air</h3>
-          <p class="sofia-l text-light text-[30px] leading-[54px]">
-            Regulating or improving air quality - <br />Achieve milestones by
-            improving <br />
-            indoor air quality, reducing pollution, <br />
-            and promoting a healthier <br />
+          <div>
+            <img src="./assets/img/air.png" class="max-w-full" alt="" />
+          </div>
+          <h3 class="text-white trenda-semi text-[30px] md:text-[32px] 2xl:text-[45px] mt-8 mb-2">Air</h3>
+          <p class="sofia-l text-light text-[20px] md:text-[25px] 2xl:text-[30px] leading-[35px] md:leading-[40px] 2xl:leading-[54px]">
+            Regulating or improving air quality - <br class="hidden lg:block" />Achieve milestones by
+            improving <br class="hidden lg:block" />
+            indoor air quality, reducing pollution, <br class="hidden lg:block" />
+            and promoting a healthier <br class="hidden lg:block" />
             environment.
           </p>
         </div>
       </div>
-      <div>
+      <div class="my-20 2xl:my-0">
         <img
           src="./assets/img/clover-logob.png"
-          class="max-w-full mx-auto"
+          class="max-w-full mx-auto md:w-1/2 2xl:w-auto"
           alt=""
         />
       </div>
-      <div class="flex items-center justify-between">
+      <div class="flex flex-col md:flex-row lg:items-center justify-between gap-20 md:gap-10 lg:gap-0">
         <div>
-          <img src="./assets/img/water.png" alt="" />
-          <h3 class="text-white trenda-semi text-[45px] mt-8 mb-2">Water</h3>
-          <p class="sofia-l text-light text-[30px] leading-[54px]">
-            Minimisation in water usage - Earn <br />
-            achievements by conserving water, <br />
-            reducing waste, and promoting <br />
-            sustainable water management <br />
+          <div>
+            <img src="./assets/img/water.png" class="max-w-full" alt="" />
+          </div>
+          <h3 class="text-white trenda-semi text-[30px] md:text-[32px] 2xl:text-[45px] mt-8 mb-2">Water</h3>
+          <p class="sofia-l text-light text-[20px] md:text-[25px] 2xl:text-[30px] leading-[35px] md:leading-[40px] 2xl:leading-[54px]">
+            Minimisation in water usage - Earn <br class="hidden lg:block" />
+            achievements by conserving water, <br class="hidden lg:block" />
+            reducing waste, and promoting <br class="hidden lg:block" />
+            sustainable water management <br class="hidden lg:block" />
             practices.
           </p>
         </div>
         <div>
-          <img src="./assets/img/earth.png" alt="" />
-          <h3 class="text-white trenda-semi text-[45px] mt-8 mb-2">Earth</h3>
-          <p class="sofia-l text-light text-[30px] leading-[54px]">
-            Overall consumption reduction - <br />
-            Earn achievements by reducing your <br />
-            overall energy consumption and <br />
-            making your home more energy-<br />efficient.
+          <div>
+            <img src="./assets/img/earth.png" class="max-w-full" alt="" />
+          </div>
+          <h3 class="text-white trenda-semi text-[30px] md:text-[32px] 2xl:text-[45px] mt-8 mb-2">Earth</h3>
+          <p class="sofia-l text-light text-[20px] md:text-[25px] 2xl:text-[30px] leading-[35px] md:leading-[40px] 2xl:leading-[54px]">
+            Overall consumption reduction - <br class="hidden lg:block" />
+            Earn achievements by reducing your <br class="hidden lg:block" />
+            overall energy consumption and <br class="hidden lg:block" />
+            making your home more energy-<br class="hidden lg:block" />efficient.
           </p>
         </div>
       </div>
       <div
-        class="flex items-center gap-12 p-16 bg-[#282828] rounded-[50px] mt-48"
+        class="flex flex-col lg:flex-row lg:items-center gap-5 lg:gap-12 p-5 md:p-12 2xl:p-16 bg-[#282828] rounded-[50px] mt-20 md:mt-48"
       >
         <div class="basis-[43%]">
-          <img src="./assets/img/wheel.png" class="max-w-full" alt="" />
+          <img src="./assets/img/wheel.png" class="max-w-full w-1/2 md:w-1/4 lg:w-auto" alt="" />
         </div>
         <div>
-          <h2 class="text-white trenda-l text-[62px] uppercase">
+          <h2 class="text-white trenda-l text-[30px] md:text-[37px] lg:text-[47px] 2xl:text-[62px] uppercase">
             <span class="text-primary">Earning Ether</span> Achievements
           </h2>
-          <p class="text-light sofia-l text-[26px] leading-[63px] capitalize">
+          <p class="text-light sofia-l text-[16px] md:text-[22px] 2xl:text-[26px] leading-[35px] md:leading-[48px] 2xl:leading-[63px] capitalize mt-2 md:mt-0">
             In addition to the four leaves, users can earn Ether achievements by
             participating in quests, challenges, and data contribution. These
             achievements can be redeemed for Clover Tokens, which can be
@@ -408,12 +427,12 @@
     <!-- Fire Air Section Code End  -->
     <!-- Retail Reward Section Code Start  -->
     <section class="px-[5%]">
-      <div class="grid grid-cols-2 gap-48 items-center">
+      <div class="grid lg:grid-cols-2 gap-20 md:gap-10 lg:gap-10 2xl:gap-48 items-center lg:gap-y-32">
         <div>
-          <h3 class="text-white trenda-l uppercase text-[80px]">
+          <h3 class="text-white trenda-l uppercase text-[45px] md:text-[55px] lg:text-[60px] 2xl:text-[80px]">
             Retail <span class="text-primary">REWARDS</span>
           </h3>
-          <p class="text-light sofia-l text-[22px] leading-[65px] pr-24">
+          <p class="text-light sofia-l text-[16px] md:text-[20px] lg:text-[20px] 2xl:text-[22px] leading-[30px] md:leading-[40px] lg:leading-[45px] 2xl:leading-[65px] lg:pr-10 2xl:pr-24">
             With Clover Tokens, users can redeem a variety of Retail Rewards
             from our partner retailers and manufacturers. This will enable them
             to indirectly reduce carbon emissions through promotional offers.
@@ -423,28 +442,28 @@
           <ul>
             <li class="flex items-center gap-4">
               <img src="./assets/img/bullet.png" alt="" />
-              <p class="text-white sofia-l text-[30px] leading-[50px]">
+              <p class="text-white sofia-l text-[16px] md:text-[20px] lg:text-[24px] 2xl:text-[30px] leading-[28px] 2xl:leading-[50px]">
                 <span class="sofia-m">Discounts</span> on sustainable products
                 and services
               </p>
             </li>
-            <li class="flex items-center gap-4">
+            <li class="flex items-center gap-4 my-5 2xl:my-10">
               <img src="./assets/img/bullet.png" alt="" />
-              <p class="text-white sofia-l text-[30px] leading-[50px] my-10">
+              <p class="text-white sofia-l text-[16px] md:text-[20px] lg:text-[24px] 2xl:text-[30px] leading-[28px] 2xl:leading-[50px] ">
                 <span class="sofia-m">Free Trails</span> of energy-efficient
                 appliances and devices
               </p>
             </li>
             <li class="flex items-center gap-4">
               <img src="./assets/img/bullet.png" alt="" />
-              <p class="text-white sofia-l text-[30px] leading-[50px]">
+              <p class="text-white sofia-l text-[16px] md:text-[20px] lg:text-[24px] 2xl:text-[30px] leading-[28px] 2xl:leading-[50px]">
                 <span class="sofia-m">Exclusive access </span> to eco-friendly
                 fashion and lifestyle brands
               </p>
             </li>
-            <li class="flex items-center gap-4">
+            <li class="flex items-center gap-4 mt-5 2xl:mt-10">
               <img src="./assets/img/bullet.png" alt="" />
-              <p class="text-white sofia-l text-[30px] leading-[50px] mt-10">
+              <p class="text-white sofia-l text-[16px] md:text-[20px] lg:text-[24px] 2xl:text-[30px] leading-[28px] 2xl:leading-[50px]">
                 <span class="sofia-m">Gift cards</span> to popular retailers and
                 restaurants
               </p>
@@ -455,10 +474,10 @@
           <img src="./assets/img/coin2.png" class="max-w-full" alt="" />
         </div>
         <div>
-          <h3 class="text-white trenda-l uppercase text-[80px]">
+          <h3 class="text-white trenda-l uppercase text-[45px] md:text-[80px] lg:text-[55px] xl:tex-[80px]">
             <span class="text-primary">Clover</span> Coin
           </h3>
-          <p class="text-light sofia-l text-[22px] leading-[65px]">
+          <p class="text-light sofia-l text-[16px] md:text-[20px] lg:text-[18px] 2xl:text-[22px] leading-[30px] md:leading-[40px] lg:leading-[40px] 2xl:leading-[65px]">
             The Clover Coin is a family-friendly environment designed to educate
             the younger generation about blockchain and cryptocurrency.
             Gamification will also increase transparency in carbon markets,
@@ -470,14 +489,16 @@
     </section>
     <!-- Retail Reward Section Code End  -->
     <!-- Eather coin Section Code Start  -->
-    <section class="px-[5%] py-48">
+    <section class="px-[5%] py-20 md:py-48">
       <div class="relative">
-        <img src="./assets/img/eather.png" class="max-w-wfull" alt="" />
-        <div class="absolute left-12 top-12 bottom-12 w-[43%]">
-          <h2 class="trenda-l text-primary text-[80px] uppercase">
+        <img src="./assets/img/eather.png" class="hidden lg:block max-w-full 2xl:w-full" alt="" />
+        <img src="./assets/img/eather1.png" class="block md:hidden max-w-full" alt="" />
+        <img src="./assets/img/eather2.png" class="hidden md:block lg:hidden max-w-full" alt="" />
+        <div class="absolute left-5 top-5 bottom-5 right-5 lg:right-auto lg:left-12 lg:top-12 lg:bottom-12 md:w-[45%] lg:w-[55%] xl:w-[43%]">
+          <h2 class="trenda-l text-primary text-center md:text-start text-[20px]  lg:text-[50px] 2xl:text-[80px] uppercase">
             The aether coin
           </h2>
-          <p class="sofia-l text-light text-[32px] leading-[67px]">
+          <p class="sofia-l text-light text-center md:text-start text-[14px]  lg:text-[20px] 2xl:text-[32px] leading-[38px] md:leading-[45px] lg:leading-[49px] 2xl:leading-[67px]">
             As you progress on your journey, you'll be rewarded with Clover
             Aether coins, the ultimate symbol of sustainable energy achievement.
             The Aether Coin represents the pinnacle of our collective efforts to
@@ -490,7 +511,7 @@
         </div>
       </div>
     </section>
-    <section class="px-[2.5%]">
+    <section class="px-[5%] md:px-[2.5%]">
       <div class="relative">
         <img
           src="./assets/img/cm-benefitbg.png"
@@ -521,18 +542,18 @@
     </section>
     <!-- Eather coin Section Code End  -->
     <!-- Mobile app Section Code Start  -->
-    <section class="px-[5%] py-48">
-      <div class="flex items-center jujstify-between">
+    <section class="px-[5%] py-20 md:py-48">
+      <div class="flex flex-col md:flex-row items-center justify-between md:gap-10">
         <div>
           <h2
-            class="trenda-r text-white text-[100px] leading-[148px] uppercase"
+            class="mb-5 md:mb-0 trenda-r text-white text-center md:text-start text-[35px] md:text-[45px] lg:text-[65px] 2xl:text-[100px] md:leading-[80px] lg:leading-[110px] 2xl:leading-[148px] uppercase"
           >
-            Stay on top of <br />
-            your <span class="text-primary">achievements</span>
+            Stay on top of <br class="hidden lg:block" />
+            your <br> <span class="text-primary">achievements</span>
           </h2>
         </div>
         <div>
-          <img src="./assets/img/clover-app.png" class="max-w-full" alt="" />
+          <img src="./assets/img/clover-app.png" class="max-w-full w-3/4 mx-auto md:mx-0 md:!ml-auto" alt="" />
         </div>
       </div>
     </section>
@@ -540,143 +561,143 @@
     <!-- Earn Token Section Code Start  -->
     <section class="px-[5%]">
       <div>
-        <h2 class="trenda-l text-white text-[100px] uppercase text-center">
+        <h2 class="trenda-l text-white text-[45px] md:text-[55px] 2xl:text-[100px] uppercase text-center">
           How to earn <span class="text-primary">Clover token</span>
         </h2>
-        <div class="grid grid-cols-2 gap-14 mt-28">
+        <div class="grid lg:grid-cols-2 gap-14 lg:gap-6 2xl:gap-14 mt-14 md:mt-28">
           <div
-            class="p-10 rounded-[40px] bg-[#2b2b2b] shadow-6xl flex items-center gap-10"
+            class="p-5 2xl:p-10 rounded-[40px] bg-[#2b2b2b] shadow-6xl flex flex-col md:flex-row md:items-center gap-5 2xl:gap-10"
           >
-            <div>
-              <img src="./assets/img/token1.png" class="max-w-full" alt="" />
+            <div class="w-[100%] 2xl:w-auto">
+              <img src="./assets/img/token1.png" class="md:max-w-full w-1/3 md:w-auto" alt="" />
             </div>
             <div>
-              <h4 class="text-white trenda-semi text-[32px]">Proving Power</h4>
-              <p class="sofia-l text-light text-[26px] leading-[50px]">
-                Users share their energy usage data. <br />
-                Coins are awarded based on the value <br />
+              <h4 class="text-white trenda-semi text-[24px] lg:text-[22px] 2xl:text-[32px]">Proving Power</h4>
+              <p class="sofia-l text-light text-[16px] lg:text-[18px] 2xl:text-[26px] leading-[30px] lg:leading-[35px] 2xl:leading-[50px]">
+                Users share their energy usage  data. <br class="hidden 2xl:block" />
+                Coins are awarded based on the value <br class="hidden 2xl:block" />
                 and frequency of their data contributions.
               </p>
             </div>
           </div>
           <div
-            class="p-10 rounded-[40px] bg-[#2b2b2b] shadow-6xl flex items-center gap-10"
+            class="p-5 2xl:p-10 rounded-[40px] bg-[#2b2b2b] shadow-6xl flex flex-col md:flex-row md:items-center gap-5 2xl:gap-10"
           >
-            <div>
-              <img src="./assets/img/token2.png" class="max-w-full" alt="" />
+            <div class="w-[100%] 2xl:w-auto">
+              <img src="./assets/img/token2.png" class="max-w-full w-1/3 md:w-auto" alt="" />
             </div>
             <div>
-              <h4 class="text-white trenda-semi text-[32px]">
+              <h4 class="text-white trenda-semi text-[24px] lg:text-[22px] 2xl:text-[32px]">
                 Green Behaviour
               </h4>
-              <p class="sofia-l text-light text-[26px] leading-[50px]">
-                Users track and reduce energy <br />
-                consumption. They earn coins for eco- <br />friendly actions and
-                completing <br />
+              <p class="sofia-l text-light text-[16px] lg:text-[18px] 2xl:text-[26px] leading-[30px] lg:leading-[35px] 2xl:leading-[50px]">
+                Users track and reduce energy <br class="hidden 2xl:block" />
+                consumption. They earn coins for eco- <br class="hidden 2xl:block" />friendly actions and
+                completing <br class="hidden 2xl:block" />
                 sustainability challenges.
               </p>
             </div>
           </div>
           <div
-            class="p-10 rounded-[40px] bg-[#2b2b2b] shadow-6xl flex items-center gap-10"
+            class="p-5 2xl:p-10 rounded-[40px] bg-[#2b2b2b] shadow-6xl flex flex-col md:flex-row md:items-center gap-5 2xl:gap-10"
           >
-            <div>
-              <img src="./assets/img/token3.png" class="max-w-full" alt="" />
+            <div class="w-[100%] 2xl:w-auto">
+              <img src="./assets/img/token3.png" class="max-w-full w-1/3 md:w-auto" alt="" />
             </div>
             <div>
-              <h4 class="text-white trenda-semi text-[32px]">Carbon Credits</h4>
-              <p class="sofia-l text-light text-[26px] leading-[50px]">
-                Carbon credits are earned based on <br />
-                staking duration. Users redeem these <br />
-                credits for various rewards and <br />
+              <h4 class="text-white trenda-semi text-[24px] lg:text-[22px] 2xl:text-[32px]">Carbon Credits</h4>
+              <p class="sofia-l text-light text-[16px] lg:text-[18px] 2xl:text-[26px] leading-[30px] lg:leading-[35px] 2xl:leading-[50px]">
+                Carbon credits are earned based on <br class="hidden 2xl:block" />
+                staking duration. Users redeem these <br class="hidden 2xl:block" />
+                credits for various rewards and <br class="hidden 2xl:block" />
                 benefits
               </p>
             </div>
           </div>
-          <div
-            class="p-10 rounded-[40px] bg-[#2b2b2b] shadow-6xl flex items-center gap-10"
+          <dxi
+            class="p-5 2xl:p-10 rounded-[40px] bg-[#2b2b2b] shadow-6xl flex flex-col md:flex-row md:items-center gap-5 2xl:gap-10"
           >
-            <div>
-              <img src="./assets/img/token4.png" class="max-w-full" alt="" />
+            <div class="w-[100%] 2xl:w-auto">
+              <img src="./assets/img/token4.png" class="max-w-full w-1/3 md:w-auto" alt="" />
             </div>
             <div>
-              <h4 class="text-white trenda-semi text-[32px]">
+              <h4 class="text-white trenda-semi text-[24px] lg:text-[22px] 2xl:text-[32px]">
                 Energy Incentives
               </h4>
-              <p class="sofia-l text-light text-[26px] leading-[50px]">
-                Gamification motivates customers to <br />
-                save energy through rewards, points, <br />
-                and challenges, leading to cost and <br />
+              <p class="sofia-l text-light text-[16px] lg:text-[18px] 2xl:text-[26px] leading-[30px] lg:leading-[35px] 2xl:leading-[50px]">
+                Gamification motivates customers to <br class="hidden 2xl:block" />
+                save energy through rewards, points, <br class="hidden 2xl:block" />
+                and challenges, leading to cost and <br class="hidden  2xl:block" />
                 environmental benefits.
               </p>
             </div>
-          </div>
+        </dxi>
           <div
-            class="p-10 rounded-[40px] bg-[#2b2b2b] shadow-6xl flex items-center gap-10"
+            class="p-5 2xl:p-10 rounded-[40px] bg-[#2b2b2b] shadow-6xl flex flex-col md:flex-row md:items-center gap-5 2xl:gap-10"
           >
-            <div>
-              <img src="./assets/img/token5.png" class="max-w-full" alt="" />
+            <div class="w-[100%] 2xl:w-auto">
+              <img src="./assets/img/token5.png" class="max-w-full w-1/3 md:w-auto" alt="" />
             </div>
             <div>
-              <h4 class="text-white trenda-semi text-[32px]">
+              <h4 class="text-white trenda-semi text-[24px] lg:text-[22px] 2xl:text-[32px]">
                 Family Friendly
               </h4>
-              <p class="sofia-l text-light text-[26px] leading-[50px]">
-                Leaf Coin provides a fun and <br />
-                interactive way for children to learn <br />
+              <p class="sofia-l text-light text-[16px] lg:text-[18px] 2xl:text-[26px] leading-[30px] lg:leading-[35px] 2xl:leading-[50px]">
+                Clover token provides a fun and <br class="hidden 2xl:block" />
+                interactive way for children to learn <br class="hidden 2xl:block" />
                 about cryptocurrency and blockchain technology.
               </p>
             </div>
-          </div>
+        </div>
           <div
-            class="p-10 rounded-[40px] bg-[#2b2b2b] shadow-6xl flex items-center gap-10"
+            class="p-5 2xl:p-10 rounded-[40px] bg-[#2b2b2b] shadow-6xl flex flex-col md:flex-row md:items-center gap-5 2xl:gap-10"
           >
-            <div>
-              <img src="./assets/img/token6.png" class="max-w-full" alt="" />
+            <div class="w-[100%] 2xl:w-auto">
+              <img src="./assets/img/token6.png" class="max-w-full w-1/3 md:w-auto" alt="" />
             </div>
             <div>
-              <h4 class="text-white trenda-semi text-[32px]">
+              <h4 class="text-white trenda-semi text-[24px] lg:text-[22px] 2xl:text-[32px]">
                 Customer Loyalty
               </h4>
-              <p class="sofia-l text-light text-[26px] leading-[50px]">
-                Gamified experiences boost loyalty. <br />
-                Customers who join energy-saving <br />
-                challenges and earn rewards remain <br />
+              <p class="sofia-l text-light text-[16px] lg:text-[18px] 2xl:text-[26px] leading-[30px] lg:leading-[35px] 2xl:leading-[50px]">
+                Gamified experiences boost loyalty. <br class="hidden 2xl:block" />
+                Customers who join energy-saving <br class="hidden 2xl:block" />
+                challenges and earn rewards remain <br class="hidden 2xl:block" />
                 loyal to the retailer.
               </p>
             </div>
           </div>
           <div
-            class="p-10 rounded-[40px] bg-[#2b2b2b] shadow-6xl flex items-center gap-10"
+            class="p-5 2xl:p-10 rounded-[40px] bg-[#2b2b2b] shadow-6xl flex flex-col md:flex-row md:items-center gap-5 2xl:gap-10"
           >
-            <div>
-              <img src="./assets/img/token7.png" class="max-w-full" alt="" />
+            <div class="w-[100%] 2xl:w-auto">
+              <img src="./assets/img/token7.png" class="max-w-full w-1/3 md:w-auto" alt="" />
             </div>
             <div>
-              <h4 class="text-white trenda-semi text-[32px]">
+              <h4 class="text-white trenda-semi text-[24px] lg:text-[22px] 2xl:text-[32px]">
                 Carbon Quests and Challenges
               </h4>
-              <p class="sofia-l text-light text-[26px] leading-[50px]">
-                Gamified challenges and quests <br />
-                reward users for eco-friendly actions, <br />
-                making sustainability fun, engaging, <br />
+              <p class="sofia-l text-light text-[16px] lg:text-[18px] 2xl:text-[26px] leading-[30px] lg:leading-[35px] 2xl:leading-[50px]">
+                Gamified challenges and quests <br class="hidden 2xl:block" />
+                reward users for eco-friendly actions, <br class="hidden 2xl:block" />
+                making sustainability fun, engaging, <br class="hidden 2xl:block" />
                 and rewarding.
               </p>
             </div>
           </div>
           <div
-            class="p-10 rounded-[40px] bg-[#2b2b2b] shadow-6xl flex items-center gap-10"
+            class="p-5 2xl:p-10 rounded-[40px] bg-[#2b2b2b] shadow-6xl flex flex-col md:flex-row md:items-center gap-5 2xl:gap-10"
           >
-            <div>
-              <img src="./assets/img/token8.png" class="max-w-full" alt="" />
+            <div class="w-[100%] 2xl:w-auto">
+              <img src="./assets/img/token8.png" class="max-w-full w-1/3 md:w-auto" alt="" />
             </div>
             <div>
-              <h4 class="text-white trenda-semi text-[32px]">
+              <h4 class="text-white trenda-semi text-[24px] lg:text-[22px] 2xl:text-[32px]">
                 Educational Opportunities
               </h4>
-              <p class="sofia-l text-light text-[26px] leading-[50px]">
-                Retailers can use gamification, like <br> quizzes and interactive
-                games, to <br> educate customers on energy <br> efficiency and
+              <p class="sofia-l text-light text-[16px] lg:text-[18px] 2xl:text-[26px] leading-[30px] lg:leading-[35px] 2xl:leading-[50px]">
+                Retailers can use gamification, like <br class="hidden 2xl:block"> quizzes and interactive
+                games, to <br class="hidden 2xl:block"> educate customers on energy <br class="hidden 2xl:block"> efficiency and
                 environmental impact.
               </p>
             </div>
@@ -686,44 +707,44 @@
     </section>
     <!-- Earn Token Section Code End  -->
      <!-- Progress Section Code start  -->
-      <section class="px-[5%] my-48">
+      <section class="px-[8%] my-20 md:my-48">
         <div>
-            <h2 class="trenda-r text-white uppercase text-[50px] text-center">TRACK YOUR <span class="text-primary">PROGRESS</span></h2>
-            <p class="sofia-l text-para text-[22px] text-center">Accurately monitor your journey towards a more sustainable future</p>
+            <h2 class="trenda-r text-white uppercase text-[30px] md:text-[50px] text-center">TRACK YOUR <span class="text-primary">PROGRESS</span></h2>
+            <p class="sofia-l text-para text-[16px] md:text-[22px] text-center">Accurately monitor your journey towards a more sustainable future</p>
         </div>
-        <div class="flex items-start gap-16 mt-20">
+        <div class="flex flex-col 2xl:flex-row items-center 2xl:items-start gap-16 mt-20">
             <div>
-                <img src="./assets/img/clover-graph.png" alt="">
+                <img src="./assets/img/clover-graph.png" class="mx-auto max-w-full lg:w-1/2" alt="">
             </div>
             <div>
                 <div>
-                    <h3 class="trenda-r text-[#FF0000] text-[45px] ">Fire</h3>
-                    <p class="sofia-l text-white text-[20px] leading-[30px]">Overall consumption reduction - Earn achievements by reducing <br> your overall energy consumption and making your home more <br> energy-efficient.qq</p>
+                    <h3 class="trenda-r text-[#FF0000] text-[32px] md:text-[45px] ">Fire</h3>
+                    <p class="sofia-l text-white text-[14px] md:text-[20px] leading-[24px] lg:leading-[40px] 2xl:leading-[30px]">Overall consumption reduction - Earn achievements by reducing <br class="hidden 2xl:block"> your overall energy consumption and making your home more <br class="hidden 2xl:block"> energy-efficient.qq</p>
                 </div>
                 <div class="my-10">
-                    <h3 class="trenda-r text-[#FFFF00] text-[45px]">Air</h3>
-                    <p class="sofia-l text-white text-[20px] leading-[30px]">Regulating or improving air quality - Achieve milestones by <br> improving indoor air quality, reducing pollution, and promoting a <br> healthier environment.</p>
+                    <h3 class="trenda-r text-[#FFFF00] text-[32px] md:text-[45px]">Air</h3>
+                    <p class="sofia-l text-white text-[14px] md:text-[20px] leading-[24px] lg:leading-[40px] 2xl:leading-[30px]">Regulating or improving air quality - Achieve milestones by <br class="hidden 2xl:block"> improving indoor air quality, reducing pollution, and promoting a <br class="hidden 2xl:block"> healthier environment.</p>
                 </div>
                 <div>
-                    <h3 class="trenda-r text-[#079BDB] text-[45px] ">Water</h3>
-                    <p class="sofia-l text-white text-[20px] leading-[30px]">Minimisation in water usage - Earn achievements by conserving <br> water, reducing waste, and promoting sustainable water <br> management practices.</p>
+                    <h3 class="trenda-r text-[#079BDB] text-[32px] md:text-[45px] ">Water</h3>
+                    <p class="sofia-l text-white text-[14px] md:text-[20px] leading-[24px] lg:leading-[40px] 2xl:leading-[30px]">Minimisation in water usage - Earn achievements by conserving <br class="hidden 2xl:block"> water, reducing waste, and promoting sustainable water <br class="hidden 2xl:block"> management practices.</p>
                 </div>
                 <div class="my-10">
-                    <h3 class="trenda-r text-[#60D23A] text-[45px]">Earth</h3>
-                    <p class="sofia-l text-white text-[20px] leading-[30px]">Overall consumption reduction - Earn achievements by reducing <br> your overall energy consumption and making your home more <br> energy-efficient.</p>
+                    <h3 class="trenda-r text-[#60D23A] text-[32px] md:text-[45px]">Earth</h3>
+                    <p class="sofia-l text-white text-[14px] md:text-[20px] leading-[24px] lg:leading-[40px] 2xl:leading-[30px]">Overall consumption reduction - Earn achievements by reducing <br class="hidden 2xl:block"> your overall energy consumption and making your home more <br class="hidden 2xl:block"> energy-efficient.</p>
                 </div>
                 <div>
-                    <h3 class="trenda-r text-[#C8A2C8] text-[45px] ">Ether</h3>
-                    <p class="sofia-l text-white text-[20px] leading-[30px]">Users can earn Ether achievements by participating in quests, <br> challenges, and data contribution and Power's vehicle charging <br> networks. These achievements can be redeemed for Clover Tokens.</p>
+                    <h3 class="trenda-r text-[#C8A2C8] text-[32px] md:text-[45px] ">Ether</h3>
+                    <p class="sofia-l text-white text-[14px] md:text-[20px] leading-[24px] lg:leading-[40px] 2xl:leading-[30px]">Users can earn Ether achievements by participating in quests, <br class="hidden 2xl:block"> challenges, data contribution and Power's vehicle charging <br class="hidden 2xl:block"> networks. These achievements can be redeemed for Clover Tokens.</p>
                 </div>
             </div>
         </div>
       </section>
      <!-- Progress Section Code End  -->
     <!------- Footer Code Start  ------->
-    <section class="bg-white shadow-3xl py-5 lg:py-10 relative z-10 px-[5%]">
+    <section class="bg-secondary shadow-3xl py-5 lg:py-10 relative z-10 px-[5%]">
       <div class="flex flex-col md:flex-row items-center justify-between">
-        <p class="trenda-semi text-secondary text-[10px] md:text-sm lg:text-lg">
+        <p class="trenda-semi text-white text-[10px] md:text-sm lg:text-lg">
           Power Global © 2024
         </p>
         <ul

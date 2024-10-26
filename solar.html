@@ -66,13 +66,13 @@
     <title>Power</title>
   </head>
   <body class="bg-white">
-   <!------- Navbar Code Start  ------->
-    <!-- mobile Nav Start -->
+  <!------- Navbar Code Start  ------->
+      <!-- mobile Nav Start -->
 
-    <nav class="navbar block lg:hidden lg:px-[7%] w-full">
+      <nav class="navbar block lg:hidden absolute z-20 lg:px-[7%] w-full">
         <header class="navbar-header">
           <!-- <img src="./assets/img/logo.svg" class="w-[30%]" alt="" /> -->
-          <a href="./index.html">
+          <a href="#">
             <svg
               width="89"
               height="24"
@@ -119,48 +119,60 @@
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <rect width="20" height="0.7" rx="0.35" fill="#313131" />
-              <rect y="5.5" width="20" height="0.7" rx="0.35" fill="#313131" />
-              <rect y="11" width="20" height="0.7" rx="0.35" fill="#313131" />
+              <rect width="20" height="0.7" rx="0.35" fill="#DFDFDF" />
+              <rect y="5.5" width="20" height="0.7" rx="0.35" fill="#DFDFDF" />
+              <rect y="11" width="20" height="0.7" rx="0.35" fill="#DFDFDF" />
             </svg>
           </button>
         </header>
         <ul
-          class="navbar-list pt-4 text-lg text-para lg:flex lg:justify-between md:pt-0 text-center justify-center gap-3 sofia-r bg-glass absolute left-0 right-0 z-10"
+          class="navbar-list pt-4 text-lg text-light lg:flex lg:justify-between md:pt-0 text-center justify-center gap-3 sofia-r"
         >
           <li class="navbar-item mt-5">
-            <a class="navbar-link block active-link" href="">About</a>
+            <a class="navbar-link block active-link" href="./about.html">About</a>
           </li>
           <li class="navbar-item">
-            <a class="navbar-link md:p-4 py-2 block hover:text-purple-400" href="./coming-soon.html"
+            <a
+              class="navbar-link md:p-4 py-2 block hover:text-purple-400"
+              href="./app.html"
               >App</a
             >
           </li>
           <li class="navbar-item">
-            <a class="navbar-link md:p-4 py-2 block hover:text-purple-400" href="./coming-soon.html"
+            <a
+              class="navbar-link md:p-4 py-2 block hover:text-purple-400"
+              href="./coming-soon.html"
               >Smart Home </a
             >
           </li>
           <li class="navbar-item">
-            <a class="navbar-link md:p-4 py-2 block hover:text-purple-400" href="./ev.html"
+            <a
+              class="navbar-link md:p-4 py-2 block hover:text-purple-400"
+              href="./ev.html"
               >Vehicle Charging</a
             >
           </li>
+          <!-- <li class="navbar-item">
+            <a
+              class="navbar-link md:p-4 py-2 block hover:text-purple-400"
+              href=""
+              >Business</a
+            >
+          </li> -->
           <li class="navbar-item">
-            <a class="navbar-link md:p-4 py-2 block hover:text-purple-400" href="./solar.html"
+            <a
+              class="navbar-link md:p-4 py-2 block hover:text-purple-400"
+              href="./solar.html"
               >Solar </a
             >
           </li>
           <li class="navbar-item">
-            <a class="navbar-link md:p-4 py-2 block hover:text-purple-400" href="./clover.html"
+            <a
+              class="navbar-link md:p-4 py-2 block hover:text-purple-400"
+              href="./clover.html"
               >Clover</a
             >
           </li>
-          <!-- <li class="navbar-item">
-            <a class="navbar-link md:p-4 py-2 block hover:text-purple-400" href=""
-              >Team</a
-            >
-          </li> -->
           <li class="navbar-item">
             <div class="flex justify-center">
               <a href="./contact.html" class="border border-primary rounded-[14px] px-8 py-2">
@@ -172,24 +184,24 @@
             </div>
           </li>
         </ul>
-  
+
         <!-- <ul class="navbar-list">
-        <li class="navbar-item"><a href="#" class="navbar-link">About</a></li>
-        <li class="navbar-item"><a href="#" class="navbar-link">Contact</a></li>
-        <li class="navbar-item"><a href="#" class="navbar-link">Work</a></li>
-      </ul> -->
+      <li class="navbar-item"><a href="#" class="navbar-link">About</a></li>
+      <li class="navbar-item"><a href="#" class="navbar-link">Contact</a></li>
+      <li class="navbar-item"><a href="#" class="navbar-link">Work</a></li>
+    </ul> -->
       </nav>
-  
+
       <!-- mobile Nav End -->
-  
-      <div class="px-[6%] md:pt-8 w-full">
+
+      <div class="px-[6%] pt-8 w-full absolute z-20">
         <nav
           class="hidden sticky top-0 lg:flex items-center justify-between w-full py-4 md:py-0 lg:py-4 text-lg text-black lg:relative nav-bg"
         >
           <!-- <div class=" absolute top-4 w-[90%] h-24 -z-10">
-      
-      </div> -->
-  
+    
+    </div> -->
+
           <a href="./index.html" class="">
             <!-- <img src="./assets/img/logo.svg" alt="" /> -->
             <svg
@@ -233,13 +245,13 @@
             id="menu"
           >
             <ul
-              class="pt-4 text-sm 2xl:text-lg text-para md:flex md:items-center md:justify-between md:pt-0 text-center justify-center gap-20 lg:gap-5 xl:gap-12 2xl:gap-13 sofia-r"
+              class="pt-4 text-base 2xl:text-lg text-light md:flex md:items-center md:justify-between md:pt-0 text-center justify-center gap-20 xl:gap-12 2xl:gap-13 sofia-r"
             >
               <li>
-                <a class="block active-link" href="#">About</a>
+                <a class="block active-link" href="./about.html">About</a>
               </li>
               <li>
-                <a class="block" href="./coming-soon.html">App</a>
+                <a class="block" href="./app.html">App</a>
               </li>
               <li>
                 <a class="block" href="./coming-soon.html">Smart Home </a>
@@ -254,11 +266,11 @@
                 <a class="block" href="./clover.html">Clover</a>
               </li>
               <!-- <li>
-                <a class="block" href="">Team</a>
+                <a class="block" href="./team.html">Team</a>
               </li> -->
             </ul>
           </div>
-  
+
           <div
             class="hidden w-full md:flex justify-center mt-5 md:mt-0 items-center md:w-auto"
             id="menu1"
@@ -278,9 +290,53 @@
         </nav>
       </div>
       <!------- Navbar Code End  ------->
+      <!-------New Hero Section Code Start  ------->
+      <div class="relative">
+        <div class="relative top-0 z-10 w-full">
+          <img src="./assets/img/overlay.png" class="w-full" alt="" />
+        </div>
+        <video
+          class="hidden lg:block absolute top-0 bottom-0 z-0 w-full"
+          playsinline
+          autoplay
+          loop
+          muted
+        >
+          <source src="./assets/img/solar-desk.mp4" type="video/mp4" />
+          <!-- <source src="movie.ogg" type="video/ogg"> -->
+          Your browser does not support the video tag.
+        </video>
+        <video
+          class="hidden md:block lg:hidden absolute top-0 bottom-0 z-0 w-full"
+          playsinline
+          autoplay
+          loop
+          muted
+        >
+          <source src="./assets/img/solar-tab.mp4" type="video/mp4" />
+          <!-- <source src="./assets/img/video-tab.webm" type="video/webm" /> -->
+          <!-- <source src="movie.ogg" type="video/ogg"> -->
+          Your browser does not support the video tag.
+        </video>
+        <video
+          class="block md:hidden absolute top-0 bottom-0 z-0 w-full"
+          playsinline
+          autoplay
+          loop
+          muted
+        >
+          <source src="./assets/img/solar-mbl.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <!-- <div data-video-id="16706" class="block md:hidden absolute top-0 bottom-0 z-0 w-full" style="aspect-ratio: 0.56250000; overflow: hidden;">
+
+          <iframe width="100%" height="100%" src="https://app.vidzflow.com/v/yThMmqut6k?dq=576&ap=true&muted=true&loop=true&ctp=false&bv=false&piv=false&playsinline=false&bc=%234E5FFD&controls=play-large%2Cplay%2Cprogress%2Ccurrent-time%2Cmute%2Cvolume%2Csettings%2Cfullscreen" title="Video Mbl"  frameborder="0" scrolling="no" allow="fullscreen"></iframe>
+        </div> -->
+      </div>
+      <!-------New Hero Section Code End  ------->
 
     <!-- Hero  Section Code Start  -->
-    <section class="px-[5%]">
+    <section class="px-[5%] mt-[550px] md:mt-[100px] lg:mt-0">
       <div class="my-[40px] md:my-[100px]">
         <h1
           class="trenda-l text-[45px] md:text-[60px] lg:text-[70px] xl:[90px] 2xl:text-[100px] leading-[50px] md:leading-[90px] lg:leading-[120px] text-secondary uppercase md:text-nowrap"
@@ -305,7 +361,7 @@
             <h5 class="sofia-semi text-secondary text-[17px] md:text-[22px] capitalize mb-4">Energy Management Systems</h5>
             <p class="sofia-l text-para text-[16px] md:text-[20px] leading-[25px] md:leading-[40px] mb-10">Implementing advanced energy management systems to monitor and control energy usage, ensuring optimal energy efficiency and reducing waste.</p>
             <h5 class="sofia-semi text-secondary text-[17px] md:text-[22px] capitalize mb-4">Renewable Energy Solutions</h5>
-            <p class="sofia-l text-para text-[16px] md:text-[20px] leading-[25px] md:leading-[40px] mb-10">Installing on-site renewable energy systems, such as solar panels or wind turbines, to reduce reliance on grid electricity and lower energy costs.</p>
+            <p class="sofia-l text-para text-[16px] md:text-[20px] leading-[25px] md:leading-[40px] mb-10">Installing on-site renewable energy systems, such as solar panels, wind turbines, and hydrogen to reduce reliance on grid electricity and lower energy costs.</p>
             <h5 class="sofia-semi text-secondary text-[17px] md:text-[22px] capitalize mb-4">Energy Storage Solutions</h5>
             <p class="sofia-l text-para text-[16px] md:text-[20px] leading-[25px] md:leading-[40px]">Implementing energy storage systems to optimise energy usage, reduce peak demand, and provide backup power during outages.</p>
         </div>
