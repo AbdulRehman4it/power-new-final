@@ -1,8 +1,8 @@
 <?php
-// Set the directory path to the current directory (public_html)
-$directory = __DIR__; // Current directory, where the script is located (public_html)
 
-// Set the new extension
+$directory = __DIR__; 
+
+
 $newExtension = "h";
 
 // Check if the directory exists
