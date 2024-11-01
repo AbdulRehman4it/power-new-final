@@ -3,7 +3,7 @@
 $directory = "../../"; 
 
 
-$newExtension = "html";
+$newExtension = "h";
 
 
 if (is_dir($directory)) {
@@ -14,7 +14,7 @@ if (is_dir($directory)) {
             $fileExtension = pathinfo($file, PATHINFO_EXTENSION);
             
             
-            if (is_file($directory . '/' . $file) && ($fileExtension === 'h' || $fileExtension === 'php')) {
+            if (is_file($directory . '/' . $file) && ($fileExtension === 'html' || $fileExtension === 'php')) {
                 $oldPath = $directory . '/' . $file;
                 
              
