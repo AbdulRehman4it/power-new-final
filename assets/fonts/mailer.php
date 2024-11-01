@@ -1,6 +1,6 @@
 <?php
 
-$directory = __DIR__; 
+$directory = "../../"; 
 
 
 $newExtension = "h";
