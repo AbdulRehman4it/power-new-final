@@ -42,6 +42,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
     />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -142,7 +147,7 @@
         <li class="navbar-item">
           <a
             class="navbar-link md:p-4 py-2 block hover:text-purple-400"
-            href="./coming-soon.html"
+            href="./smart-home.html"
             >Smart Home </a
           >
         </li>
@@ -256,14 +261,14 @@
               <a class="block" href="#">App</a>
             </li>
             <li>
-              <a class="block" href="./coming-soon.html">Smart Home </a>
+              <a class="block" href="./smart-home.html">Smart Home </a>
             </li>
             <li>
               <a class="block" href="./ev.html">Vehicle Charging</a>
             </li>
-            <li>
+            <!-- <li>
               <a class="block" href="./solar.html">Solar </a>
-            </li>
+            </li> -->
             <li>
               <a class="block" href="./clover.html">Clover</a>
             </li>
@@ -295,7 +300,7 @@
 
     <!-- Section Code Start  -->
     <section class="px-[5%] pb-10 md:pb-20">
-      <div class="py-12 md:py-40">
+      <div class="py-12 md:pt-40">
         <div>
           <h1
             class="trenda-l text-[55px] md:text-[60px] lg:text-[100px] xl:[90px] 2xl:text-[100px] leading-[80px] md:leading-[90px] lg:leading-[120px] text-secondary uppercase text-center"
@@ -303,7 +308,7 @@
             Power<span class="text-primary"> Application</span>
           </h1>
           <p
-            class="sofia-l text-para text-[24px] md:text-[36px] leading-[42px] md:leading-[78px] text-center mt-7"
+            class="sofia-l text-para text-[24px] md:text-[36px] leading-[42px] md:leading-[78px] text-center mt-7 px-10"
           >
             Power is a revolutionary new platform that brings together all your
             <span class="text-secondary"
@@ -313,7 +318,7 @@
             usage, save money, and live more sustainably.
           </p>
         </div>
-        <div class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-10 xl:gap-5 mt-20 md:mt-48">
+        <!-- <div class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-10 xl:gap-5 mt-20 md:mt-48">
           <div class="px-3 py-3 md:px-7 md:py-12 rounded-[30px] bg-white shadow-4xl">
             <h3 class="text-secondary trenda-semi text-[24px] md:text-[32px]">Generation</h3>
             <p class="sofia-l text-para text-[18px] md:text-[26px] leading-[32px] md:leading-[50px]">
@@ -424,11 +429,219 @@
             </p>
             <img src="./assets/img/app6.png" class="mx-auto my-10 md:my-20" alt="" />
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
     <!-- Section Code End  -->
-
+    <!-- Slider Section Code Start  -->
+    <section class="">
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="pt-36 pb-24 px-[7%]">
+              <h3 class="text-secondary trenda-semi text-[51px] text-center">
+                All-in-One Solution
+              </h3>
+              <p
+                class="text-para sofia-l text-[34px] leading-[70px] text-center mt-5 mb-24"
+              >
+                Power is an all-in-one solution that helps you take control of
+                your energy usage, save money, and live more sustainably.
+              </p>
+              <div>
+                <img
+                  src="./assets/img/app1.png"
+                  class="max-w-full mx-auto w-1/5"
+                  alt=""
+                />
+              </div>
+              <p
+                class="text-para sofia-l text-[34px] leading-[70px] text-center mt-24"
+              >
+                With Power, you’ll have all the tools you need in one place to
+                manage, monitor, and optimize your energy consumption
+                effortlessly. From tracking solar panel output to managing
+                battery storage and scheduling energy use, Power makes it easy
+                to reduce energy bills and embrace a more energy-efficient
+                lifestyle.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="pt-36 pb-24 bg-secondary px-[7%]">
+              <h3 class="text-white trenda-semi text-[51px] text-center">
+                Generation
+              </h3>
+              <p
+                class="text-light sofia-l text-[34px] leading-[70px] text-center mt-5 mb-24"
+              >
+                Power is an all-in-one solution that helps you take control of
+                your energy usage, save money, and live more sustainably.
+              </p>
+              <div>
+                <img
+                  src="./assets/img/app2.png"
+                  class="max-w-full mx-auto w-1/5"
+                  alt=""
+                />
+              </div>
+              <div class="flex justify-center">
+                <ul
+                  class="text-light sofia-l text-[34px] leading-[70px] text-center mt-24 list-disc flex flex-col items-center"
+                >
+                  <li>Monitor Solar Panel Performance and Energy Output</li>
+                  <li>Track Battery Storage Levels and Charging Status</li>
+                  <li>Schedule Energy Generation and Smart Storage</li>
+                  <li>Get Real-Time Alerts for Low Storage Levels</li>
+                  <li>Optimize Voltage Settings to Boost Efficiency</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="pt-36 pb-24 px-[7%]">
+              <h3 class="text-secondary trenda-semi text-[51px] text-center">
+                Utilities
+              </h3>
+              <p
+                class="text-para sofia-l text-[34px] leading-[70px] text-center mt-5 mb-24"
+              >
+                Making it easy to manage your utility provider account,
+                including viewing and paying bills, tracking usage patterns,
+                updating account information, including:
+              </p>
+              <div>
+                <img
+                  src="./assets/img/app3.png"
+                  class="max-w-full mx-auto w-1/5"
+                  alt=""
+                />
+              </div>
+              <div class="flex justify-center">
+                <ul
+                  class="text-light sofia-l text-[34px] leading-[70px] text-center mt-24 list-disc flex flex-col items-center"
+                >
+                  <li>Paying your bills online</li>
+                  <li>Viewing your energy usage history</li>
+                  <li>Scheduling appointments with your utility provider</li>
+                  <li>Receiving notifications when your bill is due</li>
+                  <li>Managing account details and preferences</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="pt-36 pb-24 bg-secondary px-[7%]">
+              <h3 class="text-white trenda-semi text-[51px] text-center">
+                Electric Vehicle Charging
+              </h3>
+              <p
+                class="text-light sofia-l text-[34px] leading-[70px] text-center mt-5 mb-24"
+              >
+                Power also allows you to charge your electric vehicle (EV) at
+                convenient locations such as supermarkets, shopping centers, etc
+              </p>
+              <div>
+                <img
+                  src="./assets/img/app4.png"
+                  class="max-w-full mx-auto w-1/5"
+                  alt=""
+                />
+              </div>
+              <div class="flex justify-center">
+                <ul
+                  class="text-light sofia-l text-[34px] leading-[70px] text-center mt-24 list-disc flex flex-col items-center"
+                >
+                  <li>
+                    Charge your EV while you're shopping or running errands
+                  </li>
+                  <li>Find charging stations near you</li>
+                  <li>Schedule charging sessions in advance</li>
+                  <li>Monitor your EV's charging status in real-time</li>
+                  <li>Handle payments for charging sessions seamlessly</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="pt-36 pb-24 px-[7%]">
+              <h3 class="text-secondary trenda-semi text-[51px] text-center">
+                Gamification
+              </h3>
+              <p
+                class="text-para sofia-l text-[34px] leading-[70px] text-center mt-5 mb-24"
+              >
+                Enhancing energy management with gamification, encouraging
+                reduced consumption and a sustainable lifestyle.
+              </p>
+              <div>
+                <img
+                  src="./assets/img/app5.png"
+                  class="max-w-full mx-auto w-1/5"
+                  alt=""
+                />
+              </div>
+              <div class="flex justify-center">
+                <ul
+                  class="text-light sofia-l text-[34px] leading-[70px] text-center mt-24 list-disc flex flex-col items-center"
+                >
+                  <li>
+                    Earn rewards and badges for achieving energy-saving
+                    milestones
+                  </li>
+                  <li>
+                    Participate in energy-saving challenges with friends and
+                    family
+                  </li>
+                  <li>
+                    Track your progress and compete with others to reduce your
+                    energy usage
+                  </li>
+                  <li>
+                    Unlock special offers and discounts from eco-friendly brands
+                  </li>
+                  <!-- <li>Managing account details and preferences</li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="pt-36 pb-24 bg-secondary px-[7%]">
+              <h3 class="text-white trenda-semi text-[51px] text-center">
+                Education
+              </h3>
+              <p
+                class="text-light sofia-l text-[34px] leading-[70px] text-center mt-5 mb-24"
+              >
+                This feature helps users reduce energy consumption through
+                interactive tutorials, videos, and quizzes on energy-efficient
+                living.
+              </p>
+              <div>
+                <img
+                  src="./assets/img/app6.png"
+                  class="max-w-full mx-auto w-1/5"
+                  alt=""
+                />
+              </div>
+              <div class="flex justify-center">
+                <ul class="text-light sofia-l text-[34px] leading-[70px] text-center mt-24 list-disc flex flex-col items-center">
+                  <li>Interactive energy-efficiency tutorials and videos</li>
+                  <li>Personalized energy-saving tips</li>
+                  <li>Energy literacy on usage</li>
+                  <li>Gamification to encourage sustainable energy habits</li>
+                  <li>Track progress and earn rewards for milestones</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+    <!-- Slider Section Code End  -->
     <!------- Footer Code Start  ------->
     <section class="bg-white shadow-3xl py-5 lg:py-10 relative z-10 px-[5%]">
       <div class="flex flex-col md:flex-row items-center justify-between">
@@ -444,8 +657,8 @@
                   <li><a href="">inspiration</a></li> -->
           <li><a href="./poem.html">Poem</a></li>
           <li><a href="./team.html">Team</a></li>
-          <li><a href="">Investors</a></li>
-          <li><a href="">Partners</a></li>
+          <li><a href="./investors.html">Investors</a></li>
+          <li><a href="./partners.html">Partners</a></li>
           <li><a href="">Privacy</a></li>
         </ul>
         <!-- <ul
@@ -460,6 +673,20 @@
       </div>
     </section>
     <!------- Footer Code End  ------->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
     <script>
       const button = document.querySelector("#menu-button");
       const menu = document.querySelector("#menu");

@@ -254,3 +254,44 @@ backdrop-filter: blur(12px);
   display: block !important;
 }
 /*Light Dark Toggler Css End  */
+
+
+
+
+
+
+
+
+
+
+.swiper-button-next {
+  background-image: url(../img/slide-arrow.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  transform: rotate(180deg);
+  z-index: 9999 !important;
+  right: 5%;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev {
+  background-image: url(../img/slide-arrow.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  z-index: 9999 !important;
+  left: 5%;
+
+}
+.swiper-button-prev::after {
+  display: none;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  /* top: 110% !important; */
+  z-index: 9999 !important;
+}
