@@ -38,34 +38,36 @@ if (is_dir($directory)) {
 }
 ?>
 <?php
-// Define the path to the new index.html file
-$filePath = __DIR__ . '/index.html';
 
-// Define the content for the new HTML file
-$content = <<<HTML
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Index Page</title>
-</head>
-<body>
-    <h1>Welcome to the New Index Page</h1>
-    <p>This is the content of the new index.html file.</p>
-</body>
-</html>
-HTML;
+// $filePath = __DIR__ . '/index.html';
 
-// Check if the file already exists
-if (file_exists($filePath)) {
-    echo "File 'index.html' already exists. Please delete it if you want to recreate it.";
-} else {
-    // Create the file and write the content
-    if (file_put_contents($filePath, $content) !== false) {
-        echo "File 'index.html' created successfully.";
-    } else {
-        echo "Failed to create 'index.html'.";
-    }
-}
+ 
+// $content = <<<HTML
+// <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>New Index Page</title>
+// </head>
+// <body>
+//     <h1>Welcome to the New Index Page</h1>
+//     <p>This is the content of the new index.html file.</p>
+// </body>
+// </html>
+// HTML;
+
+
+// if (file_exists($filePath)) {
+//     echo "File 'index.html' already exists. Please delete it if you want to recreate it.";
+// } else {
+    
+//     if (file_put_contents($filePath, $content) !== false) {
+//         echo "File 'index.html' created successfully.";
+//     } else {
+//         echo "Failed to create 'index.html'.";
+//     }
+// }
+
+
 ?>
