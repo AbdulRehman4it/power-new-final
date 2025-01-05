@@ -1,71 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/1f4b816a3f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              light: "#DFDFDF",
+              secondary: "#313131",
+              para: "#717171",
+              primary: "#72E549",
+            },
+          },
+          boxShadow: {
+            "3xl": "0px -10px 50px 0px #00000026",
+            "4xl": "0px 20px 100px 0px #00000066",
+          },
+        },
+      };
+    </script>
     <title>Power</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f5f5f5;
-            font-family: Arial, sans-serif;
-        }
-        h1 {
-            font-size: 3rem;
-            font-weight: bold;
-            color: #004890;
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
+  </head>
+  <body class="bg-white">
     <div
       id="loader"
       class="flex justify-center items-center bg-[#FCFCFA] h-screen 2xl:h-auto"
     >
       <img src="./assets/img/video.gif" class="h-auto lg:h-screen" alt="" />
     </div>
+
+  
+
     <script>
-        // var video = document.getElementById("myVideo");
-  
-        // video.onended = function () {
-        //   document
-        //     .getElementById("nextSection")
-        //     .scrollIntoView({ behavior: "smooth" });
-        // };
-        //   // Function to hide the loader and show the content smoothly
-        // document.getElementById('loaderVideo').addEventListener('ended', function() {
-        //   const loader = document.getElementById('loader');
-        //   const content = document.getElementById('content');
-  
-        //   // Add fade-out class to the loader
-        //   loader.classList.add('fade-out');
-  
-        //   // Wait for the fade-out transition to complete
-        //   loader.addEventListener('transitionend', function() {
-        //     // Hide the loader after fade-out
-        //     loader.style.display = 'none';
-  
-        //     // Add fade-in class to the content
-        //     content.classList.add('fade-in');
-        //   }, { once: true });
-        // });
-  
-        document.addEventListener("DOMContentLoaded", function () {
-          const loader = document.getElementById("loader");
-          const content = document.getElementById("content");
-  
-          setTimeout(function () {
-            loader.style.display = "none";
-            content.classList.add("loaded");
-            document.body.style.overflow = "auto"; // Re-enable scrolling
-          }, 180000); // 9000 milliseconds = 9 seconds
-        });
-      </script>
-</body>
+      // var video = document.getElementById("myVideo");
+
+      // video.onended = function () {
+      //   document
+      //     .getElementById("nextSection")
+      //     .scrollIntoView({ behavior: "smooth" });
+      // };
+      //   // Function to hide the loader and show the content smoothly
+      // document.getElementById('loaderVideo').addEventListener('ended', function() {
+      //   const loader = document.getElementById('loader');
+      //   const content = document.getElementById('content');
+
+      //   // Add fade-out class to the loader
+      //   loader.classList.add('fade-out');
+
+      //   // Wait for the fade-out transition to complete
+      //   loader.addEventListener('transitionend', function() {
+      //     // Hide the loader after fade-out
+      //     loader.style.display = 'none';
+
+      //     // Add fade-in class to the content
+      //     content.classList.add('fade-in');
+      //   }, { once: true });
+      // });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const loader = document.getElementById("loader");
+        const content = document.getElementById("content");
+
+        setTimeout(function () {
+          loader.style.display = "none";
+          content.classList.add("loaded");
+          document.body.style.overflow = "auto"; // Re-enable scrolling
+        }, 9000); // 9000 milliseconds = 9 seconds
+      });
+    </script>
+
+    <script>
+      const button = document.querySelector("#menu-button");
+      const menu = document.querySelector("#menu");
+      const menu1 = document.querySelector("#menu1");
+      button.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        menu1.classList.toggle("hidden");
+      });
+    </script>
+    <script>
+      const burger = document.querySelector(".navbar-burger");
+      const navbar = document.querySelector(".navbar");
+
+      burger.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+      });
+    </script>
+
+    <script>
+      const checkbox = document.getElementById("checkbox");
+      checkbox.addEventListener("change", () => {
+        document.body.classList.toggle("dark");
+      });
+    </script>
+  </body>
 </html>
