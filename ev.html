@@ -1,29 +1,644 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f5f5f5;
-            font-family: Arial, sans-serif;
-        }
-        h1 {
-            font-size: 3rem;
-            font-weight: bold;
-            color: #004890;
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-    <h1>Pay the remaining and have your website</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/1f4b816a3f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              light: "#DFDFDF",
+              secondary: "#313131",
+              para: "#717171",
+              primary: "#72E549",
+            },
+          },
+          boxShadow: {
+            "3xl": "0px -10px 50px 0px #00000026",
+            "4xl": "0px 20px 100px 0px #00000066",
+            "5xl": "0px 4px 10px 0px #00000014",
+          },
+        },
+      };
+    </script>
+    <title>Power</title>
+  </head>
+  <body class="bg-white">
+    <!------- Navbar Code Start  ------->
+    <!-- mobile Nav Start -->
+
+    <nav class="navbar block lg:hidden lg:px-[7%] w-full">
+      <header class="navbar-header">
+        <!-- <img src="./assets/img/logo.svg" class="w-[30%]" alt="" /> -->
+        <a href="./index.html">
+          <svg
+            width="89"
+            height="24"
+            viewBox="0 0 192 50"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M176.117 27.0588V0.567272H177.869V8.05525C178.978 3.74399 182.364 0 187.617 0C188.726 0 189.952 0.056728 191.412 0.510544L190.886 2.15563C189.544 1.75854 188.493 1.70181 187.617 1.70181C179.62 1.70181 178.044 10.7781 177.869 16.621V27.0588H176.117Z"
+              fill="#72E549"
+            />
+            <path
+              d="M160.823 13.7384V14.4764H136.068C136.354 21.4591 141.556 25.944 147.788 25.944C152.076 25.944 155.678 23.957 157.793 20.5508L159.28 21.4591C156.821 25.3195 152.648 27.6471 147.788 27.6471C140.299 27.6471 134.353 22.1404 134.353 13.7384C134.353 5.33639 140.299 0 147.788 0C155.335 0 160.823 5.33639 160.823 13.7384ZM147.788 1.7031C141.442 1.7031 136.525 6.07441 136.068 12.9436H159.108C158.822 6.07441 154.134 1.7031 147.788 1.7031Z"
+              fill="#72E549"
+            />
+            <path
+              d="M15.1592 0.587891C22.888 0.587891 29.0587 6.37102 29.0587 14.1386C29.0587 21.9061 22.888 27.6892 15.1592 27.6892C8.61456 27.6892 4.37615 24.2874 2.56859 20.3186V38.235H0.823364V1.09817H2.50626L2.56859 7.84515C4.37615 3.87634 8.61456 0.587891 15.1592 0.587891ZM14.9722 26.1584C21.5791 26.1584 27.1888 21.0556 27.1888 14.1386C27.1888 7.22148 21.5791 2.11872 14.9722 2.11872C7.61729 2.11872 2.56859 7.16479 2.56859 14.1386C2.56859 21.1123 7.61729 26.1584 14.9722 26.1584Z"
+              fill="#72E549"
+            />
+            <path
+              d="M55.7937 28.2349C48.2752 28.2349 41.9998 22.323 41.9998 14.4404C41.9998 6.49984 48.2752 0.587891 55.7937 0.587891C63.3123 0.587891 69.6469 6.49984 69.6469 14.4404C69.6469 22.323 63.3123 28.2349 55.7937 28.2349ZM55.7937 26.67C62.1875 26.67 67.8708 21.4536 67.8708 14.4404C67.8708 7.36924 62.1875 2.15282 55.7937 2.15282C49.4 2.15282 43.7167 7.36924 43.7167 14.4404C43.7167 21.4536 49.4 26.67 55.7937 26.67Z"
+              fill="#72E549"
+            />
+            <path
+              d="M120.213 0.530541H122L112.202 27.6471H110.703L101.942 2.71165L93.2966 27.6471H91.7981L81.9998 0.530541H83.8442L92.605 25.0533L101.193 0H102.864L111.568 24.9944L120.213 0.530541Z"
+              fill="#72E549"
+            />
+            <line
+              x1="0.823364"
+              y1="49.5588"
+              x2="26.1175"
+              y2="49.5588"
+              stroke="#72E549"
+              stroke-width="0.882353"
+            />
+          </svg>
+        </a>
+        <button class="navbar-burger">
+          <svg
+            class="-mt-1"
+            width="20"
+            height="12"
+            viewBox="0 0 20 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="20" height="0.7" rx="0.35" fill="#313131" />
+            <rect y="5.5" width="20" height="0.7" rx="0.35" fill="#313131" />
+            <rect y="11" width="20" height="0.7" rx="0.35" fill="#313131" />
+          </svg>
+        </button>
+      </header>
+      <ul
+        class="navbar-list pt-4 text-lg text-para lg:flex lg:justify-between md:pt-0 text-center justify-center gap-3 sofia-r bg-glass absolute left-0 right-0 z-10"
+      >
+        <li class="navbar-item mt-5">
+          <a class="navbar-link block active-link" href="./about.html">About</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link md:p-4 py-2 block hover:text-purple-400" href="./app.html"
+            >App</a
+          >
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link md:p-4 py-2 block hover:text-purple-400" href="./smart-home.html"
+            >Smart Home </a
+          >
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link md:p-4 py-2 block hover:text-purple-400" href="./ev.html"
+            >Vehicle Charging</a
+          >
+        </li>
+        <!-- <li class="navbar-item">
+          <a class="navbar-link md:p-4 py-2 block hover:text-purple-400" href="./solar.html"
+            >Solar </a
+          >
+        </li> -->
+        <li class="navbar-item">
+          <a class="navbar-link md:p-4 py-2 block hover:text-purple-400" href="./clover.html"
+            >Clover</a
+          >
+        </li>
+        <!-- <li class="navbar-item">
+          <a class="navbar-link md:p-4 py-2 block hover:text-purple-400" href=""
+            >Team</a
+          >
+        </li> -->
+        <li class="navbar-item">
+          <div class="flex justify-center">
+            <a href="./contact.html" class="border border-primary rounded-[14px] px-8 py-2">
+              <p class="text-sm text-primary trenda-semi">
+                Contact Us &nbsp;&nbsp; | &nbsp;&nbsp;
+                <i class="fa-solid fa-user text-primary"></i>
+              </p>
+            </a>
+          </div>
+        </li>
+      </ul>
+
+      <!-- <ul class="navbar-list">
+      <li class="navbar-item"><a href="#" class="navbar-link">About</a></li>
+      <li class="navbar-item"><a href="#" class="navbar-link">Contact</a></li>
+      <li class="navbar-item"><a href="#" class="navbar-link">Work</a></li>
+    </ul> -->
+    </nav>
+
+    <!-- mobile Nav End -->
+
+    <div class="px-[6%] md:pt-8 w-full">
+      <nav
+        class="hidden sticky top-0 lg:flex items-center justify-between w-full py-4 md:py-0 lg:py-4 text-lg text-black lg:relative nav-bg"
+      >
+        <!-- <div class=" absolute top-4 w-[90%] h-24 -z-10">
+    
+    </div> -->
+
+        <a href="./index.html" class="">
+          <!-- <img src="./assets/img/logo.svg" alt="" /> -->
+          <svg
+            class="w-[125px] h-[33px] 2xl:w-[144px] 2xl:h-[38px]"
+            viewBox="0 0 192 50"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M176.117 27.0588V0.567272H177.869V8.05525C178.978 3.74399 182.364 0 187.617 0C188.726 0 189.952 0.056728 191.412 0.510544L190.886 2.15563C189.544 1.75854 188.493 1.70181 187.617 1.70181C179.62 1.70181 178.044 10.7781 177.869 16.621V27.0588H176.117Z"
+              fill="#72E549"
+            />
+            <path
+              d="M160.823 13.7384V14.4764H136.068C136.354 21.4591 141.556 25.944 147.788 25.944C152.076 25.944 155.678 23.957 157.793 20.5508L159.28 21.4591C156.821 25.3195 152.648 27.6471 147.788 27.6471C140.299 27.6471 134.353 22.1404 134.353 13.7384C134.353 5.33639 140.299 0 147.788 0C155.335 0 160.823 5.33639 160.823 13.7384ZM147.788 1.7031C141.442 1.7031 136.525 6.07441 136.068 12.9436H159.108C158.822 6.07441 154.134 1.7031 147.788 1.7031Z"
+              fill="#72E549"
+            />
+            <path
+              d="M15.1592 0.587891C22.888 0.587891 29.0587 6.37102 29.0587 14.1386C29.0587 21.9061 22.888 27.6892 15.1592 27.6892C8.61456 27.6892 4.37615 24.2874 2.56859 20.3186V38.235H0.823364V1.09817H2.50626L2.56859 7.84515C4.37615 3.87634 8.61456 0.587891 15.1592 0.587891ZM14.9722 26.1584C21.5791 26.1584 27.1888 21.0556 27.1888 14.1386C27.1888 7.22148 21.5791 2.11872 14.9722 2.11872C7.61729 2.11872 2.56859 7.16479 2.56859 14.1386C2.56859 21.1123 7.61729 26.1584 14.9722 26.1584Z"
+              fill="#72E549"
+            />
+            <path
+              d="M55.7937 28.2349C48.2752 28.2349 41.9998 22.323 41.9998 14.4404C41.9998 6.49984 48.2752 0.587891 55.7937 0.587891C63.3123 0.587891 69.6469 6.49984 69.6469 14.4404C69.6469 22.323 63.3123 28.2349 55.7937 28.2349ZM55.7937 26.67C62.1875 26.67 67.8708 21.4536 67.8708 14.4404C67.8708 7.36924 62.1875 2.15282 55.7937 2.15282C49.4 2.15282 43.7167 7.36924 43.7167 14.4404C43.7167 21.4536 49.4 26.67 55.7937 26.67Z"
+              fill="#72E549"
+            />
+            <path
+              d="M120.213 0.530541H122L112.202 27.6471H110.703L101.942 2.71165L93.2966 27.6471H91.7981L81.9998 0.530541H83.8442L92.605 25.0533L101.193 0H102.864L111.568 24.9944L120.213 0.530541Z"
+              fill="#72E549"
+            />
+            <line
+              x1="0.823364"
+              y1="49.5588"
+              x2="26.1175"
+              y2="49.5588"
+              stroke="#72E549"
+              stroke-width="0.882353"
+            />
+          </svg>
+        </a>
+        <div
+          class="hidden w-full md:flex md:items-center justify-center md:w-auto"
+          id="menu"
+        >
+          <ul
+            class="pt-4 text-sm 2xl:text-lg text-para md:flex md:items-center md:justify-between md:pt-0 text-center justify-center gap-20 lg:gap-5 xl:gap-12 2xl:gap-13 sofia-r"
+          >
+            <li>
+              <a class="block active-link" href="./about.html">About</a>
+            </li>
+            <li>
+              <a class="block" href="./app.html">App</a>
+            </li>
+            <li>
+              <a class="block" href="./smart-home.html">Smart Home </a>
+            </li>
+            <li>
+              <a class="block" href="./ev.html">Vehicle Charging</a>
+            </li>
+            <!-- <li>
+              <a class="block" href="./solar.html">Solar </a>
+            </li> -->
+            <li>
+              <a class="block" href="./clover.html">Clover</a>
+            </li>
+            <!-- <li>
+              <a class="block" href="">Team</a>
+            </li> -->
+          </ul>
+        </div>
+
+        <div
+          class="hidden w-full md:flex justify-center mt-5 md:mt-0 items-center md:w-auto"
+          id="menu1"
+        >
+          <div class="flex justify-center">
+            <a
+              href="./contact.html"
+              class="border border-primary rounded-[30px] px-7 py-3 2xl:px-8 2xl:py-3"
+            >
+              <p class="text-sm 2xl:text-base text-primary sofia-semi">
+                Contact Us &nbsp;&nbsp; | &nbsp;&nbsp;
+                <i class="fa-solid fa-user text-primary"></i>
+              </p>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!------- Navbar Code End  ------->
+
+    <!-- Hero  Section Code Start  -->
+    <section class="px-[5%]">
+      <div class="flex flex-col md:flex-row items-center justify-between md:gap-10 2xl:gap-0 py-[30px] md:leading-[60px] lg:py-[120px]">
+        <h1
+          class="trenda-l text-[55px] md:text-[60px] lg:text-[100px] xl:[90px] 2xl:text-[100px] leading-[80px] md:leading-[90px] lg:leading-[120px] text-secondary uppercase md:text-nowrap	"
+        >
+          Embrace<br class="hidden md:block" />
+          <span class="text-primary"> AI Charging</span>
+        </h1>
+        <p class="text-right sofia-l text-para text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] leading-[35px] md:leading-[45px] lg:leading-[50px] xl:leading-[65px]">
+          Imagine a world where electric vehicle charging <br class="hidden xl:block 2xl:hidden"/> is seamless,
+          efficient, and cost-<br class="hidden 2xl:block"/>effective. Power is <br class="hidden xl:block 2xl:hidden"/> making that a reality
+          with our cutting-edge <br class="hidden xl:block 2xl:hidden"/> AI-powered <br class="hidden 2xl:block"/>
+          commercial EV charging solution
+        </p>
+      </div>
+      <div class="relative">
+        <img src="./assets/img/ev-herobg.png" class="w-full hidden md:block" alt="" />
+        <img src="./assets/img/ev-herobg1.png" class="w-full block md:hidden" alt="" />
+        <img
+          src="./assets/img/ev-herocard.png"
+          class="absolute bottom-5 lg:bottom-14 left-5 lg:left-14 w-[88%] md:w-[60%] xl:w-auto "
+          alt=""
+        />
+        <!-- <img
+        src="./assets/img/ev-herocard1.png"
+        class="absolute bottom-5 left-[6%] block md:hidden"
+        alt=""
+      /> -->
+      </div>
+      <div class="py-[30px] md:py-[60px] lg:py-[120px]">
+        <p class="sofia-l text-para text-[16px] md:text-[18px] lg:text-[22px] leading-[35px] md:leading-[45px] lg:leading-[65px] text-center">
+          With real-time monitoring and analytics, operators can track charging
+          activity, identify trends, and make data-driven decisions to improve
+          the customer experience. But that's not all. Our AI-driven charging
+          profiles provide personalized experiences for individual vehicles,
+          ensuring optimal charging conditions and minimizing wear and tear on
+          the battery. And with enhanced security features, operators can rest
+          assured that their charging infrastructure is secure and protected.
+        </p>
+        <p class="sofia-l text-para text-[16px] md:text-[18px] lg:text-[22px] leading-[35px] md:leading-[45px] lg:leading-[65px] mt-10 text-center">
+          Power is revolutionizing the commercial EV charging industry,
+          providing a competitive advantage for operators and setting a new
+          standard for efficiency, cost-effectiveness, and customer
+          satisfaction. Join the future of electric vehicle charging with Power.
+        </p>
+      </div>
+    </section>
+    <!-- Hero  Section Code End -->
+    <!-- Community Section Code Start  -->
+    <section class="px-[5%]">
+      <div>
+        <h2 class="trenda-r text-secondary text-[30px] md:text-[40px] lg:text-[50px] uppercase">
+          Our Community
+        </h2>
+        <div
+          class="flex flex-col md:flex-row items-start justify-between md:gap-5 pt-10 md:pt-20 pb-6 md:pb-12 border-b border-light"
+        >
+          <div class="flex items-start gap-5 md:gap-3 lg:gap-6 xl:gap-[80px] basis-5/12">
+            <h4 class="trenda-r text-primary text-[25px] md:text-[30px] lg:text-[37px] xl:text-[45px] leading-none">01</h4>
+            <h3 class="trenda-r text-secondary text-[20px] md:text-[23px] lg:text-[27px] xl:text-[30px] leading-none">
+              Faster Charging Times
+            </h3>
+          </div>
+          <p class="sofia-l text-para text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] leading-[30px] md:leading-[37px] lg:leading-[45px] xl:leading-[50px] mt-3 md:mt-0 basis-7/12">
+            Faster Charging Times AI-powered optimization of charging sessions
+            ensures that charging is done efficiently, resulting in faster
+            charging times.
+          </p>
+        </div>
+        <div
+          class="flex flex-col md:flex-row items-start justify-between md:gap-5 pt-10 md:pt-20 pb-6 md:pb-12 border-b border-light"
+        >
+          <div class="flex items-start gap-5 md:gap-3 lg:gap-6 xl:gap-[80px] basis-5/12">
+            <h4 class="trenda-r text-primary text-[25px] md:text-[30px] lg:text-[37px] xl:text-[45px] leading-none">02</h4>
+            <h3 class="trenda-r text-secondary text-[20px] md:text-[23px] lg:text-[27px] xl:text-[30px] leading-none">
+              Reduced Downtime
+            </h3>
+          </div>
+          <p class="sofia-l text-para text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] leading-[30px] md:leading-[37px] lg:leading-[45px] xl:leading-[50px] mt-3 md:mt-0 basis-7/12">
+            Predictive maintenance and real-time monitoring enable operators to
+            identify and address issues quickly, reducing downtime and ensuring
+            that charging stations are always available.
+          </p>
+        </div>
+        <div
+          class="flex flex-col md:flex-row items-start justify-between md:gap-5 pt-10 md:pt-20 pb-6 md:pb-12 border-b border-light"
+        >
+          <div class="flex items-start gap-5 md:gap-3 lg:gap-6 xl:gap-[80px] basis-5/12">
+            <h4 class="trenda-r text-primary text-[25px] md:text-[30px] lg:text-[37px] xl:text-[45px] leading-none">03</h4>
+            <h3 class="trenda-r text-secondary text-[20px] md:text-[23px] lg:text-[27px] xl:text-[30px] leading-none">
+              Personalized Charging Experience
+            </h3>
+          </div>
+          <p class="sofia-l text-para text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] leading-[30px] md:leading-[37px] lg:leading-[45px] xl:leading-[50px] mt-3 md:mt-0 basis-7/12">
+            AI-driven charging profiles ensure optimal charging conditions for
+            individual vehicles, minimizing wear and tear on the vehicle's
+            battery.
+          </p>
+        </div>
+        <div
+          class="flex flex-col md:flex-row items-start justify-between md:gap-5 pt-10 md:pt-20 pb-6 md:pb-12 border-b border-light"
+        >
+          <div class="flex items-start gap-5 md:gap-3 lg:gap-6 xl:gap-[80px] basis-5/12">
+            <h4 class="trenda-r text-primary text-[25px] md:text-[30px] lg:text-[37px] xl:text-[45px] leading-none">04</h4>
+            <h3 class="trenda-r text-secondary text-[20px] md:text-[23px] lg:text-[27px] xl:text-[30px] leading-none">
+              Increased Convenience
+            </h3>
+          </div>
+          <p class="sofia-l text-para text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] leading-[30px] md:leading-[37px] lg:leading-[45px] xl:leading-[50px] mt-3 md:mt-0 basis-7/12">
+            Real-time monitoring and analytics enable operators to provide a
+            better customer experience, with features like easy payment
+            processing and charging station location tracking.
+          </p>
+        </div>
+        <div
+          class="flex flex-col md:flex-row items-start justify-between md:gap-5 pt-10 md:pt-20 pb-6 md:pb-12 border-b border-light"
+        >
+          <div class="flex items-start gap-5 md:gap-3 lg:gap-6 xl:gap-[80px] basis-5/12">
+            <h4 class="trenda-r text-primary text-[25px] md:text-[30px] lg:text-[37px] xl:text-[45px] leading-none">05</h4>
+            <h3 class="trenda-r text-secondary text-[20px] md:text-[23px] lg:text-[27px] xl:text-[30px] leading-none">
+              Cost Savings
+            </h3>
+          </div>
+          <p class="sofia-l text-para text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] leading-[30px] md:leading-[37px] lg:leading-[45px] xl:leading-[50px] mt-3 md:mt-0 basis-7/12">
+            Optimized charging and reduced downtime result in significant cost
+            savings for consumers, who can enjoy lower electricity bills and
+            reduced maintenance costs.
+          </p>
+        </div>
+        <div
+          class="flex flex-col md:flex-row items-start justify-between md:gap-5 pt-10 md:pt-20 pb-6 md:pb-12 border-b border-light"
+        >
+          <div class="flex items-start gap-5 md:gap-3 lg:gap-6 xl:gap-[80px] basis-5/12">
+            <h4 class="trenda-r text-primary text-[25px] md:text-[30px] lg:text-[37px] xl:text-[45px] leading-none">06</h4>
+            <h3 class="trenda-r text-secondary text-[20px] md:text-[23px] lg:text-[27px] xl:text-[30px] leading-none">
+              Enhanced Safety
+            </h3>
+          </div>
+          <p class="sofia-l text-para text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] leading-[30px] md:leading-[37px] lg:leading-[45px] xl:leading-[50px] mt-3 md:mt-0 basis-7/12">
+            AI-powered intrusion detection and anomaly detection capabilities
+            ensure the security and integrity of the charging infrastructure,
+            providing a safer charging experience for consumers.
+          </p>
+        </div>
+        <div
+          class="flex flex-col md:flex-row items-start justify-between md:gap-5 pt-10 md:pt-20 pb-6 md:pb-12 border-b border-light"
+        >
+          <div class="flex items-start gap-5 md:gap-3 lg:gap-6 xl:gap-[80px] basis-5/12">
+            <h4 class="trenda-r text-primary text-[25px] md:text-[30px] lg:text-[37px] xl:text-[45px] leading-none">07</h4>
+            <h3 class="trenda-r text-secondary text-[20px] md:text-[23px] lg:text-[27px] xl:text-[30px] leading-none">
+              Increased Accessibility
+            </h3>
+          </div>
+          <p class="sofia-l text-para text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] leading-[30px] md:leading-[37px] lg:leading-[45px] xl:leading-[50px] mt-3 md:mt-0 basis-7/12">
+            Power's AI-powered platform is designed to scale with the growing demand for commercial EV charging, ensuring that consumers have access to a wide range of charging stations and services.
+          </p>
+        </div>
+        <div class="flex flex-col md:flex-row items-start justify-between md:gap-5 pt-10 md:pt-20">
+          <div class="flex items-start gap-5 md:gap-3 lg:gap-6 xl:gap-[80px] basis-5/12">
+            <h4 class="trenda-r text-primary text-[25px] md:text-[30px] lg:text-[37px] xl:text-[45px] leading-none">08</h4>
+            <h3 class="trenda-r text-secondary text-[20px] md:text-[23px] lg:text-[27px] xl:text-[30px] leading-none">
+              Transparency and Accountability
+            </h3>
+          </div>
+          <p class="sofia-l text-para text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] leading-[30px] md:leading-[37px] lg:leading-[45px] xl:leading-[50px] mt-3 md:mt-0 basis-7/12">
+            Real-time monitoring and analytics provide consumers with
+            transparency and accountability, enabling them to track their
+            charging activity and make data-driven decisions about their energy
+            usage.
+          </p>
+        </div>
+        <img src="./assets/img/ev-comunity.png" class="my-[30px] md:[70px] lg:my-[170px] w-full" alt="" />
+      </div>
+    </section>
+    <!-- Community Section Code End  -->
+    <!-- Pricing Section Code Start  -->
+    <section class="px-[5%]">
+      <div>
+        <h2 class="text-secondary trenda-r text-[30px] md:-[40px] lg:text-[50px] uppercase text-center">
+          <span class="text-primary">Pricing</span> Model
+        </h2>
+        <p
+          class="text-center sofia-l text-para text-[16px] md:text-[18px] lg:text-[22px] tet-center leading-[35px] md:leading-[45px] lg:leading-[60px] mt-0 lg:mt-5"
+        >
+          At Power, we understand that every customer is unique, with different
+          energy needs and budgets. That's why we've developed a user-style
+          pricing model that adapts to your usage patterns. Our "<span
+            class="text-primary"
+            >Bolt-style</span
+          >" pricing algorithm adjusts the price per kWh based on the time of
+          day, season, and other factors to ensure you're always getting the
+          best deal. With our active AI pricing algorithm, you'll never have to
+          worry about surprise bills or hidden fees again.
+        </p>
+        <!-- <p class="text-center sofia-l text-para text-[16px] md:text-[18px] lg:text-[22px] tet-center leading-[35px] md:leading-[45px] lg:leading-[60px] mt-0 lg:mt-5">At Power, we
+          understand that every consumer is unique, with different energy needs
+          and budgets. That's why we've developed a user-style pricing model
+          that adapts to your usage patterns. Our "Bolt-style" pricing algorithm
+          adjusts the price per kWh based on the time of day, season, and other
+          factors to ensure you're always getting the best deal.</p> -->
+      </div>
+      <div>
+        <h2
+          class="text-secondary trenda-r text-[30px] md:text-[40px] lg:text-[50px] capitalize text-center mt-[50px] lg:mt-[120px] mb-5 md:mb-8 lg:mb-16"
+        >
+          Price Per kWh throughout<span class="text-primary"> the day</span>
+        </h2>
+        <img src="./assets/img/ev-graph.png" class="w-full md:w-2/3 mx-auto" alt="" />
+      </div>
+    </section>
+    <!-- Pricing Section Code End  -->
+    <!-- Work Section Code Start  -->
+    <section class="px-[5%] py-[70px] lg:py-[200px]">
+      <h3 class="text-primary trenda-r text-[25px] md:text-[32px] lg:text-[40px] md:text-center uppercase mb-5 mb-8 lg:mb-20">
+        How it’s work
+      </h3>
+      <div class="flex items-center justify-start">
+        <div class="md:basis-1/2 xl:basis-1/3">
+          <img src="./assets/img/clock.png" alt="" />
+          <h4 class="trenda-semi text-[20px] md:text-[24px] lg:text-[32px] text-secondar py-5">
+            Off-peak hours
+          </h4>
+          <p class="sofia-l text-para text-[14px] md:text-[16px] lg:text-[20px] leading-[30px] md:leading-[40px] lg:leading-[50px]">
+            When the charging hub is quiet, the price per kWh drops, making it
+            more affordable for you to charge your vehicles. Take advantage of
+            these lower rates to charge your vehicles during off-peak hours.
+          </p>
+        </div>
+      </div>
+      <div class="flex items-center justify-center lg:my-10 xl:my-24 ">
+        <img src="./assets/img/arrow-left.png" class="hidden md:block md:w-1/4" alt="" />
+        <div class="md:basis-1/2 xl:basis-1/3 md:pl-12 my-7 md:my-0">
+          <img src="./assets/img/graph-i.png" alt="" />
+          <h4 class="trenda-semi text-[20px] md:text-[24px] lg:text-[32px] text-secondar py-5">Peak hours</h4>
+          <p class="sofia-l text-para text-[14px] md:text-[16px] lg:text-[20px] leading-[30px] md:leading-[40px] lg:leading-[50px]">
+            As the charging hub becomes busier, the price per kWh adjusts
+            accordingly. This ensures that you're always getting a fair deal and
+            not paying more than you need too.
+          </p>
+        </div>
+        <img src="./assets/img/arrow-right.png" class="hidden md:block md:w-1/4 -ml-32 -mt-32" alt="" />
+      </div>
+      <div class="flex items-center justify-end">
+        <div class="md:basis-1/2 xl:basis-1/3">
+          <img src="./assets/img/energy-i.png" alt="" />
+          <h4 class="trenda-semi text-[20px] md:text-[24px] lg:text-[32px] text-secondar py-5">
+            Real-time adjustments
+          </h4>
+          <p class="sofia-l text-para text-[14px] md:text-[16px] lg:text-[20px] leading-[30px] md:leading-[40px] lg:leading-[50px]">
+            Our AI algorithm continuously monitors your energy usage and adjusts
+            the price in real-time. This means you'll never have to worry about
+            surprise bills or hidden fees again.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Work Section Code End  -->
+    <!-- Benefit Section Code Start  -->
+    <section class="px-[5%]">
+      <div>
+        <h3 class="text-primary trenda-r text-[25px] md:text-[32px] lg:text-[40px] uppercase mb-8 md:mb-12">
+          Benefits
+        </h3>
+        <div class="flex flex-col xl:flex-row items-center gap-7">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-3 2xl:gap-7 basis-1/2">
+            <div class="bg-white rounded-full flex items-center gap-2 md:gap-5 shadow-5xl">
+              <img src="./assets/img/ev-benefit1.png" class="max-w-full" alt="">
+              <p class="sofia-l text-secondary text-[20px] md:text-[26px] xl:text-[20px] 2xl:text-[26px] pr-5 xl:pr-0">Save Off-Peak</p>
+            </div>
+            <div class="bg-white rounded-full flex items-center gap-2 md:gap-5 shadow-5xl">
+              <img src="./assets/img/ev-benefit2.png" class="max-w-full" alt="">
+              <p class="sofia-l text-secondary text-[20px] md:text-[26px] xl:text-[20px] 2xl:text-[26px] pr-5 xl:pr-0">Fair Pricing</p>
+            </div>
+            <div class="bg-white rounded-full flex items-center gap-2 md:gap-5 shadow-5xl">
+              <img src="./assets/img/ev-benefit3.png" class="max-w-full" alt="">
+              <p class="sofia-l text-secondary text-[20px] md:text-[26px] xl:text-[20px] 2xl:text-[26px] pr-5 xl:pr-0">Real-Time Billing</p>
+            </div>
+            <div class="bg-white rounded-full flex items-center gap-2 md:gap-5 shadow-5xl">
+              <img src="./assets/img/ev-benefit4.png" class="max-w-full" alt="">
+              <p class="sofia-l text-secondary text-[20px] md:text-[26px] xl:text-[20px] 2xl:text-[26px] pr-5 xl:pr-0">Control Costs</p>
+            </div>
+          </div>
+          <div class="basis-1/2 relative">
+            <img src="./assets/img/ev-benefitbg2.png" class="hidden md:block w-full" alt="">
+            <img src="./assets/img/ev-benefitbg21.png" class="block md:hidden w-full" alt="">
+            <p class="text-white sofia-r text-[16px] md:text-[18px] lg:text-[22px] xl:text-[20px] 2xl:text-[22px] leading-[35px] md:leading-[32px] lg:leading-[40px] xl:leading-[23px] 2xl:leading-[40px] absolute top-4 bottom-2 md:top-5 md:bottom-5 md:w-1/2 left-4 md:left-7">By providing a transparent and adaptive pricing model, we aim to make energy management easier and more affordable for our customers.</p>
+          </div>
+        </div>
+        <a href="./bussiness.html">
+          <div class="relative my-[50px] md:my-[80px] lg:my-[170px]">
+            <img src="./assets/img/ev-benefitbg.png" class="hidden md:block w-full" alt="" />
+            <img src="./assets/img/ev-benefitbg1.png" class="block md:hidden w-full" alt="" />
+            <div class="absolute top-9 mx-auto md:top-5 lg:top-10 xl:top-32 px-3 md:px-5 xl:px-10 2xl:px-32 flex flex-col items-center w-full">
+              <h2 class="sofia-semi text-white text-center uppercase text-[20px] md:text-[28px] lg:text-[35px] xl:text-[45px] 2xl:text-[56px] mb-2 md:mb-5">Are you a business or landowner?</h2>
+              <p class="sofia-r text-white text-center text-[15px] md:text-[16px] lg:text-[19px] xl:text-[22px] 2xl:text-[24px] leading-[25px] md:leading-[30px] lg:leading-[45px] xl:leading-[50px] 2xl:leading-[62px]">
+                Looking to stay ahead of the curve and capitalize on the growing
+                demand for electric vehicle charging? <br> <br> Look no further than our AI charging solution.
+              </p>
+            </div> 
+          </div>
+        </a>
+      </div>
+    </section>
+    <!-- Benefit Section Code End  -->
+
+    <!------- Footer Code Start  ------->
+    <section class="bg-white shadow-3xl py-5 lg:py-10 relative z-10 px-[5%]">
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <p class="trenda-semi text-secondary text-[10px] md:text-sm lg:text-lg">
+          Power Global © 2024
+        </p>
+        <ul
+          class="md:px-7 mt-5 md:mt-0 2xl:px-0 flex items-center justify-between 2xl:justify-center gap-4 lg:gap-16 text-[10px] md:text-sm lg:text-xl trenda-semi text-para"
+          uppercase
+        >
+          <!-- <li></li> -->
+          <!-- <li><a href="">Purpose</a></li>
+              <li><a href="">inspiration</a></li> -->
+              <li><a href="./poem.html">Poem</a></li>
+          <li><a href="./team.html">Team</a></li>
+          <li><a href="./investors.html">Investors</a></li>
+          <li><a href="./partners.html">Partners</a></li>
+          <li><a href="">Privacy</a></li>
+        </ul>
+        <!-- <ul
+            class="flex px-5 md:hidden items-center justify-between text-[8px] sofia-m text-para uppercase"
+          >
+            <li><a href="">Contact</a></li>
+            <li><a href="">Investors</a></li>
+            <li><a href="">Partners</a></li>
+            <li><a href="">Privacy</a></li>
+          </ul>
+          <p  class="block md:hidden text-center text-[8px] trenda-semi text-para mt-5">Power © 2024</p> -->
+      </div>
+    </section>
+    <!------- Footer Code End  ------->
+    <script>
+      const button = document.querySelector("#menu-button");
+      const menu = document.querySelector("#menu");
+      const menu1 = document.querySelector("#menu1");
+      button.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        menu1.classList.toggle("hidden");
+      });
+    </script>
+    <script>
+      const burger = document.querySelector(".navbar-burger");
+      const navbar = document.querySelector(".navbar");
+
+      burger.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+      });
+    </script>
+
+    <script>
+      const checkbox = document.getElementById("checkbox");
+      checkbox.addEventListener("change", () => {
+        document.body.classList.toggle("dark");
+      });
+    </script>
+  </body>
 </html>

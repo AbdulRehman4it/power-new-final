@@ -63,34 +63,502 @@
       };
     </script>
     <title>Power</title>
-    <style>
-      body {
-          margin: 0;
-          padding: 0;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 100vh;
-          background-color: #f5f5f5;
-          font-family: Arial, sans-serif;
-      }
-      h1 {
-          font-size: 3rem;
-          font-weight: bold;
-          color: #004890;
-          text-align: center;
-      }
-  </style>
   </head>
-  <body class="">
-    <!-- <div
+  <body class="bg-white">
+    <div
       id="loader"
       class="flex justify-center items-center bg-[#FCFCFA] h-screen 2xl:h-auto"
     >
-      <img src="./assets/img/video.gif" class="h-auto lg:h-screen" alt="" loop />
+      <img src="./assets/img/video.gif" class="h-auto lg:h-screen" alt="" />
+    </div>
+
+    <!-- <div id="nextSection"> -->
+    <div id="content">
+      <!------- Navbar Code Start  ------->
+      <!-- mobile Nav Start -->
+
+      <nav class="navbar block lg:hidden absolute z-20 lg:px-[7%] w-full">
+        <header class="navbar-header">
+          <!-- <img src="./assets/img/logo.svg" class="w-[30%]" alt="" /> -->
+          <a href="#">
+            <svg
+              width="89"
+              height="24"
+              viewBox="0 0 192 50"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M176.117 27.0588V0.567272H177.869V8.05525C178.978 3.74399 182.364 0 187.617 0C188.726 0 189.952 0.056728 191.412 0.510544L190.886 2.15563C189.544 1.75854 188.493 1.70181 187.617 1.70181C179.62 1.70181 178.044 10.7781 177.869 16.621V27.0588H176.117Z"
+                fill="#72E549"
+              />
+              <path
+                d="M160.823 13.7384V14.4764H136.068C136.354 21.4591 141.556 25.944 147.788 25.944C152.076 25.944 155.678 23.957 157.793 20.5508L159.28 21.4591C156.821 25.3195 152.648 27.6471 147.788 27.6471C140.299 27.6471 134.353 22.1404 134.353 13.7384C134.353 5.33639 140.299 0 147.788 0C155.335 0 160.823 5.33639 160.823 13.7384ZM147.788 1.7031C141.442 1.7031 136.525 6.07441 136.068 12.9436H159.108C158.822 6.07441 154.134 1.7031 147.788 1.7031Z"
+                fill="#72E549"
+              />
+              <path
+                d="M15.1592 0.587891C22.888 0.587891 29.0587 6.37102 29.0587 14.1386C29.0587 21.9061 22.888 27.6892 15.1592 27.6892C8.61456 27.6892 4.37615 24.2874 2.56859 20.3186V38.235H0.823364V1.09817H2.50626L2.56859 7.84515C4.37615 3.87634 8.61456 0.587891 15.1592 0.587891ZM14.9722 26.1584C21.5791 26.1584 27.1888 21.0556 27.1888 14.1386C27.1888 7.22148 21.5791 2.11872 14.9722 2.11872C7.61729 2.11872 2.56859 7.16479 2.56859 14.1386C2.56859 21.1123 7.61729 26.1584 14.9722 26.1584Z"
+                fill="#72E549"
+              />
+              <path
+                d="M55.7937 28.2349C48.2752 28.2349 41.9998 22.323 41.9998 14.4404C41.9998 6.49984 48.2752 0.587891 55.7937 0.587891C63.3123 0.587891 69.6469 6.49984 69.6469 14.4404C69.6469 22.323 63.3123 28.2349 55.7937 28.2349ZM55.7937 26.67C62.1875 26.67 67.8708 21.4536 67.8708 14.4404C67.8708 7.36924 62.1875 2.15282 55.7937 2.15282C49.4 2.15282 43.7167 7.36924 43.7167 14.4404C43.7167 21.4536 49.4 26.67 55.7937 26.67Z"
+                fill="#72E549"
+              />
+              <path
+                d="M120.213 0.530541H122L112.202 27.6471H110.703L101.942 2.71165L93.2966 27.6471H91.7981L81.9998 0.530541H83.8442L92.605 25.0533L101.193 0H102.864L111.568 24.9944L120.213 0.530541Z"
+                fill="#72E549"
+              />
+              <line
+                x1="0.823364"
+                y1="49.5588"
+                x2="26.1175"
+                y2="49.5588"
+                stroke="#72E549"
+                stroke-width="0.882353"
+              />
+            </svg>
+          </a>
+          <button class="navbar-burger">
+            <svg
+              class="-mt-1"
+              width="20"
+              height="12"
+              viewBox="0 0 20 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="20" height="0.7" rx="0.35" fill="#DFDFDF" />
+              <rect y="5.5" width="20" height="0.7" rx="0.35" fill="#DFDFDF" />
+              <rect y="11" width="20" height="0.7" rx="0.35" fill="#DFDFDF" />
+            </svg>
+          </button>
+        </header>
+        <ul
+          class="navbar-list pt-4 text-lg text-light lg:flex lg:justify-between md:pt-0 text-center justify-center gap-3 sofia-r"
+        >
+          <li class="navbar-item mt-5">
+            <a class="navbar-link block active-link" href="./about.html">About</a>
+          </li>
+          <li class="navbar-item">
+            <a
+              class="navbar-link md:p-4 py-2 block hover:text-purple-400"
+              href="./app.html"
+              >App</a
+            >
+          </li>
+          <li class="navbar-item">
+            <a
+              class="navbar-link md:p-4 py-2 block hover:text-purple-400"
+              href="./smart-home.html"
+              >Smart Home </a
+            >
+          </li>
+          <li class="navbar-item">
+            <a
+              class="navbar-link md:p-4 py-2 block hover:text-purple-400"
+              href="./ev.html"
+              >Vehicle Charging</a
+            >
+          </li>
+          <!-- <li class="navbar-item">
+            <a
+              class="navbar-link md:p-4 py-2 block hover:text-purple-400"
+              href=""
+              >Business</a
+            >
+          </li> -->
+          <!-- <li class="navbar-item">
+            <a
+              class="navbar-link md:p-4 py-2 block hover:text-purple-400"
+              href="./solar.html"
+              >Solar </a
+            >
+          </li> -->
+          <li class="navbar-item">
+            <a
+              class="navbar-link md:p-4 py-2 block hover:text-purple-400"
+              href="./clover.html"
+              >Clover</a
+            >
+          </li>
+          <li class="navbar-item">
+            <div class="flex justify-center">
+              <a href="./contact.html" class="border border-primary rounded-[14px] px-8 py-2">
+                <p class="text-sm text-primary trenda-semi">
+                  Contact Us &nbsp;&nbsp; | &nbsp;&nbsp;
+                  <i class="fa-solid fa-user text-primary"></i>
+                </p>
+              </a>
+            </div>
+          </li>
+        </ul>
+
+        <!-- <ul class="navbar-list">
+      <li class="navbar-item"><a href="#" class="navbar-link">About</a></li>
+      <li class="navbar-item"><a href="#" class="navbar-link">Contact</a></li>
+      <li class="navbar-item"><a href="#" class="navbar-link">Work</a></li>
+    </ul> -->
+      </nav>
+
+      <!-- mobile Nav End -->
+
+      <div class="px-[6%] pt-8 w-full absolute z-20">
+        <nav
+          class="hidden sticky top-0 lg:flex items-center justify-between w-full py-4 md:py-0 lg:py-4 text-lg text-black lg:relative nav-bg"
+        >
+          <!-- <div class=" absolute top-4 w-[90%] h-24 -z-10">
+    
     </div> -->
 
-    <h1>Coming Soon</h1>
+          <a href="./index.html" class="">
+            <!-- <img src="./assets/img/logo.svg" alt="" /> -->
+            <svg
+              class="w-[125px] h-[33px] 2xl:w-[144px] 2xl:h-[38px]"
+              viewBox="0 0 192 50"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M176.117 27.0588V0.567272H177.869V8.05525C178.978 3.74399 182.364 0 187.617 0C188.726 0 189.952 0.056728 191.412 0.510544L190.886 2.15563C189.544 1.75854 188.493 1.70181 187.617 1.70181C179.62 1.70181 178.044 10.7781 177.869 16.621V27.0588H176.117Z"
+                fill="#72E549"
+              />
+              <path
+                d="M160.823 13.7384V14.4764H136.068C136.354 21.4591 141.556 25.944 147.788 25.944C152.076 25.944 155.678 23.957 157.793 20.5508L159.28 21.4591C156.821 25.3195 152.648 27.6471 147.788 27.6471C140.299 27.6471 134.353 22.1404 134.353 13.7384C134.353 5.33639 140.299 0 147.788 0C155.335 0 160.823 5.33639 160.823 13.7384ZM147.788 1.7031C141.442 1.7031 136.525 6.07441 136.068 12.9436H159.108C158.822 6.07441 154.134 1.7031 147.788 1.7031Z"
+                fill="#72E549"
+              />
+              <path
+                d="M15.1592 0.587891C22.888 0.587891 29.0587 6.37102 29.0587 14.1386C29.0587 21.9061 22.888 27.6892 15.1592 27.6892C8.61456 27.6892 4.37615 24.2874 2.56859 20.3186V38.235H0.823364V1.09817H2.50626L2.56859 7.84515C4.37615 3.87634 8.61456 0.587891 15.1592 0.587891ZM14.9722 26.1584C21.5791 26.1584 27.1888 21.0556 27.1888 14.1386C27.1888 7.22148 21.5791 2.11872 14.9722 2.11872C7.61729 2.11872 2.56859 7.16479 2.56859 14.1386C2.56859 21.1123 7.61729 26.1584 14.9722 26.1584Z"
+                fill="#72E549"
+              />
+              <path
+                d="M55.7937 28.2349C48.2752 28.2349 41.9998 22.323 41.9998 14.4404C41.9998 6.49984 48.2752 0.587891 55.7937 0.587891C63.3123 0.587891 69.6469 6.49984 69.6469 14.4404C69.6469 22.323 63.3123 28.2349 55.7937 28.2349ZM55.7937 26.67C62.1875 26.67 67.8708 21.4536 67.8708 14.4404C67.8708 7.36924 62.1875 2.15282 55.7937 2.15282C49.4 2.15282 43.7167 7.36924 43.7167 14.4404C43.7167 21.4536 49.4 26.67 55.7937 26.67Z"
+                fill="#72E549"
+              />
+              <path
+                d="M120.213 0.530541H122L112.202 27.6471H110.703L101.942 2.71165L93.2966 27.6471H91.7981L81.9998 0.530541H83.8442L92.605 25.0533L101.193 0H102.864L111.568 24.9944L120.213 0.530541Z"
+                fill="#72E549"
+              />
+              <line
+                x1="0.823364"
+                y1="49.5588"
+                x2="26.1175"
+                y2="49.5588"
+                stroke="#72E549"
+                stroke-width="0.882353"
+              />
+            </svg>
+          </a>
+          <div
+            class="hidden w-full md:flex md:items-center justify-center md:w-auto"
+            id="menu"
+          >
+            <ul
+              class="pt-4 text-base 2xl:text-lg text-light md:flex md:items-center md:justify-between md:pt-0 text-center justify-center gap-20 xl:gap-12 2xl:gap-13 sofia-r"
+            >
+              <li>
+                <a class="block active-link" href="./about.html">About</a>
+              </li>
+              <li>
+                <a class="block" href="./app.html">App</a>
+              </li>
+              <li>
+                <a class="block" href="./smart-home.html">Smart Home </a>
+              </li>
+              <li>
+                <a class="block" href="./ev.html">Vehicle Charging</a>
+              </li>
+              <!-- <li>
+                <a class="block" href="./solar.html">Solar </a>
+              </li> -->
+              <li>
+                <a class="block" href="./clover.html">Clover</a>
+              </li>
+              <!-- <li>
+                <a class="block" href="./team.html">Team</a>
+              </li> -->
+            </ul>
+          </div>
+
+          <div
+            class="hidden w-full md:flex justify-center mt-5 md:mt-0 items-center md:w-auto"
+            id="menu1"
+          >
+            <div class="flex justify-center">
+              <a
+                href="./contact.html"
+                class="border border-primary rounded-[30px] px-7 py-3 2xl:px-8 2xl:py-3"
+              >
+                <p class="text-sm 2xl:text-base text-primary sofia-semi">
+                  Contact Us &nbsp;&nbsp; | &nbsp;&nbsp;
+                  <i class="fa-solid fa-user text-primary"></i>
+                </p>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!------- Navbar Code End  ------->
+      <!-------New Hero Section Code Start  ------->
+      <div class="relative">
+        <div class="relative top-0 z-10 w-full">
+          <img src="./assets/img/overlay.png" class="w-full" alt="" />
+        </div>
+        <video
+          class="hidden lg:block absolute top-0 bottom-0 z-0 w-full"
+          playsinline
+          autoplay
+          loop
+          muted
+        >
+          <source src="./assets/img/video-desk.mp4" type="video/mp4" />
+          <!-- <source src="movie.ogg" type="video/ogg"> -->
+          Your browser does not support the video tag.
+        </video>
+        <video
+          class="hidden md:block lg:hidden absolute top-0 bottom-0 z-0 w-full"
+          playsinline
+          autoplay
+          loop
+          muted
+        >
+          <source src="./assets/img/video-tab.mp4" type="video/mp4" />
+          <source src="./assets/img/video-tab.webm" type="video/webm" />
+          <!-- <source src="movie.ogg" type="video/ogg"> -->
+          Your browser does not support the video tag.
+        </video>
+        <video
+          class="block md:hidden absolute top-0 bottom-0 z-0 w-full"
+          playsinline
+          autoplay
+          loop
+          muted
+        >
+          <source src="./assets/img/video-mbl.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <!-- <div data-video-id="16706" class="block md:hidden absolute top-0 bottom-0 z-0 w-full" style="aspect-ratio: 0.56250000; overflow: hidden;">
+
+          <iframe width="100%" height="100%" src="https://app.vidzflow.com/v/yThMmqut6k?dq=576&ap=true&muted=true&loop=true&ctp=false&bv=false&piv=false&playsinline=false&bc=%234E5FFD&controls=play-large%2Cplay%2Cprogress%2Ccurrent-time%2Cmute%2Cvolume%2Csettings%2Cfullscreen" title="Video Mbl"  frameborder="0" scrolling="no" allow="fullscreen"></iframe>
+        </div> -->
+      </div>
+      <!-------New Hero  End  ------->
+      <!------- Hero Section Code Start  ------->
+      <section
+        class="pt-20 xl:pt-10 2xl:pt-20 mt-[450px] md:mt-[100px] lg:mt-0 relative"
+      >
+        <div>
+          <h1
+            class="trenda-l text-[47px] lg:text-[70px] 2xl:text-[100px] text-secondary uppercase text-center px-[5%] mt-1"
+          >
+            Embrace energy<span class="text-primary"> Unification</span>
+          </h1>
+          <p
+            class="sofia-l text-para text-[18px] lg:text-[25px] 2xl:text-[32px] leading-[44px] lg:leading-[75px] 2xl:leading-[90px] text-center px-[5%]"
+          >
+            Power is energy unification, automation, and optimisation in one
+            location. The ability to control your homes energy down to appliance
+            and device level, manage your utilities account to charging your EV
+            car at a local shopping center. <br> An all-in-one energy solution.
+          </p>
+          <!-- <div class="relative">
+            <div class="flex justify-center">
+              <img src="./assets/img/hero.png" class="rounded-[20px] hidden md:block" alt="" />
+              <img src="./assets/img/mbl-hero.png" class="block md:hidden shadow-4xl rounded-[22px] mt-8" alt="" />
+            </div>
+            
+            <div class="flex justify-center">
+              <div
+                class="w-[90%] lg:w-[70%] 2xl:w-[55%] px-3 lg:px-10 pt-3 lg:pt-10 pb-3 lg:pb-10 bg-glass rounded-[14px] lg:rounded-[30px] absolute bottom-[-40px] md:bottom-[0px] lg:bottom-[0px] 2xl:bottom-[0px]"
+              >
+                <div
+                  class="flex justify-between items-center md:gap-10 lg:gap-24"
+                >
+                  <div class="text-center">
+                    <h3
+                      class="text-[16px] md:text-[18px] lg:text-[36px] text-primary"
+                    >
+                      <span class="trenda-b">9</span>%
+                    </h3>
+                    <span></span>
+                    <p
+                      class="text-[10px] md:text-[14px] lg:text-[24px] text-white uppercase sofia-m"
+                    >
+                      Ave consumption reduction
+                    </p>
+                  </div>
+                  <div class="text-center">
+                    <h3
+                      class="text-[16px] md:text-[18px] lg:text-[36px] trenda-b text-primary uppercase"
+                    >
+                      1,261kg
+                    </h3>
+                    <p
+                      class="text-[10px] md:text-[14px] lg:text-[24px] text-white uppercase sofia-m"
+                    >
+                      Ave annual CO2 reduction
+                    </p>
+                  </div>
+                  <div class="text-center">
+                    <h3
+                      class="text-[16px] md:text-[18px] lg:text-[36px] text-primary"
+                    >
+                      <span class="trenda-b">25</span>%
+                    </h3>
+                    <p
+                      class="text-[10px] md:text-[14px] lg:text-[24px] text-white uppercase sofia-m"
+                    >
+                      peak consumption reduction
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </section>
+      <!------- Hero Section Code End  ------->
+      <!------- Video Section Code Start  ------->
+      <!-- <section class="mt-20 lg:mt-0">
+        <img src="./assets/img/video.png" alt="" />
+      </section> -->
+      <!------- Video Section Code End  ------->
+      <!------ Graph Section Code Start  ------>
+      <section class="px-5 lg:px-[5%] my-52">
+        <div class="flex flex-col lg:flex-row items-center justify-center">
+          <div class="basis-1/2">
+            <img
+              src="./assets/img/mbl1.png"
+              class="mt-8 lg:mt-0 w-auto xl:w-[55%] 2xl:w-[50%] mx-auto"
+              alt=""
+            />
+          </div>
+          <div class="basis-1/2">
+            <p
+              class="2xl:pr-12 sofia-l text-center lg:text-left text-[16px] lg:text-[25px] 2xl:text-[30px] leading-[44px] lg:leading-[65px] 2xl:leading-[60px] text-para"
+            >
+              Power's innovative approach integrates energy intelligence,
+              unification, and intervention in a single platform,
+              <span class="text-secondary">
+                providing a seamless and comprehensive experience for consumers
+                to manage their energy usage, utilities accounts, and electric
+                vehicle charging.</span
+              >
+              This streamlined approach eliminates the need for multiple apps,
+              accounts, and devices, making it a convenient and user-friendly
+              solution for consumers.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="px-5 lg:px-[5%] my-52">
+        <div
+          class="flex flex-col-reverse lg:flex-row items-center justify-center"
+        >
+          <div class="basis-1/2">
+            <p
+              class="mt-8 lg:mt-0 2xl:pr-12 sofia-l text-center lg:text-left text-[16px] lg:text-[25px] 2xl:text-[30px] leading-[44px] lg:leading-[65px] 2xl:leading-[60px] text-para"
+            >
+              The unique ability to control energy usage down to the appliance
+              and device level sets it apart from other
+              <span class="text-secondary">
+                energy management solutions. This level of granular control
+                allows consumers to optimize their energy usage,</span
+              >
+              identify energy-hungry devices, and make data-driven decisions to
+              reduce their energy consumption.
+            </p>
+          </div>
+          <div class="basis-1/2">
+            <img
+              src="./assets/img/mbl2.png"
+              class="mt-8 lg:mt-0 w-auto xl:w-[55%] 2xl:w-[50%] mx-auto"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <section class="px-5 lg:px-[5%] my-52">
+        <div class="flex flex-col lg:flex-row items-center justify-center">
+          <div class="basis-1/2">
+            <img
+              src="./assets/img/mbl3.png"
+              class="mt-8 lg:mt-0 w-auto xl:w-[55%] 2xl:w-[50%] mx-auto"
+              alt=""
+            />
+          </div>
+          <div class="basis-1/2">
+            <p
+              class="mt-8 lg:mt-0 2xl:pr-12 sofia-l text-center lg:text-left text-[16px] lg:text-[25px] 2xl:text-[30px] leading-[44px] lg:leading-[65px] 2xl:leading-[60px] text-para"
+            >
+              Our AI-assisted intervention capabilities take energy management
+              to the next level by proactively identifying
+              <span class="text-secondary">
+                opportunities to reduce carbon emissions. Power's advanced
+                algorithms analyse energy usage patterns and predict energy
+                demand,</span
+              >
+              enabling us to intervene and optimise energy consumption in
+              real-time.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!------ Graph Section Code End  ------>
+      <!------ Mobile Screen Section Code Start  ------>
+      <!-- <section class="text-center px-5 lg:px-0">
+        <h2 class="text-secondary trenda-semi text-[22px] lg:text-[36px] text-center">Intervention</h2>
+        <p class="text-para sofia-l text-[16px] lg:text-[28px] 2xl:text-[36px] leading-[44px] lg:leading-[65px] 2xl:leading-[78px] text-center lg:w-[70%] 2xl:w-[65%] mx-auto mt-4 mb-5 lg:mt-5 lg:mb-20">Explore the hidden intricacies of your electricity usage and uncover unique trends within your household. Identify distinctive patterns and opportunities to save costs while reducing your carbon footprint.</p>
+        <img src="./assets/img/mbl-dark.png" class="mx-auto mbl-light w-[100%] md:w-[40%] xl:w-[30%] 2xl:w-[25%]" alt="">
+       
+        <img src="./assets/img/mbl-light.png" class="mx-auto mbl-dark w-[100%] md:w-[40%] xl:w-[30%] 2xl:w-[25%]" alt="">
+        
+
+        <div class="flex justify-center mt-8  mb-16 lg:mt-20 lg:mb-32">
+          <input type="checkbox" class="checkbox" id="checkbox">
+          <label for="checkbox" class="checkbox-label">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <span class="ball"></span>
+          </label>
+        </div>
+
+      </section> -->
+      <!------ Mobile Screen Section Code End  ------>
+
+      <!------- Fotter Section Code Start  ------->
+      <section class="bg-white shadow-3xl py-5 lg:py-10 relative z-10 px-[5%]">
+        <div class="flex flex-col md:flex-row items-center justify-between">
+          <p
+            class="trenda-semi text-secondary text-[10px] md:text-sm lg:text-lg"
+          >
+            Power Global © 2024
+          </p>
+          <ul
+            class="md:px-7 mt-5 md:mt-0 2xl:px-0 flex items-center justify-between 2xl:justify-center gap-4 lg:gap-16 text-[10px] md:text-sm lg:text-xl trenda-semi text-para"
+            uppercase
+          >
+            <!-- <li></li> -->
+            <!-- <li><a href="">Purpose</a></li>
+            <li><a href="">inspiration</a></li> -->
+            <li><a href="./poem.html">Poem</a></li>
+          <li><a href="./team.html">Team</a></li>
+          <li><a href="./investors.html">Investors</a></li>
+          <li><a href="./partners.html">Partners</a></li>
+          <li><a href="">Privacy</a></li>
+          </ul>
+          <!-- <ul
+          class="flex px-5 md:hidden items-center justify-between text-[8px] sofia-m text-para uppercase"
+        >
+          <li><a href="">Contact</a></li>
+          <li><a href="">Investors</a></li>
+          <li><a href="">Partners</a></li>
+          <li><a href="">Privacy</a></li>
+        </ul>
+        <p  class="block md:hidden text-center text-[8px] trenda-semi text-para mt-5">Power © 2024</p> -->
+        </div>
+      </section>
+      <!------- Fotter Section Code End  ------->
+    </div>
 
     <script>
       // var video = document.getElementById("myVideo");
@@ -126,7 +594,7 @@
           loader.style.display = "none";
           content.classList.add("loaded");
           document.body.style.overflow = "auto"; // Re-enable scrolling
-        }, 180000); // 9000 milliseconds = 9 seconds
+        }, 9000); // 9000 milliseconds = 9 seconds
       });
     </script>
 
